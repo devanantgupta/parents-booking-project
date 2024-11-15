@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Evening 7b</title>
+  </head>
+
+  <body>
+    <!-- Submit Pop Up-->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" style="border-bottom: 0">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button
+              type="button"
+              class="btn-close cross"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <div class="iconntitle">
+                <div class="icf">
+                  <div class="ic1">
+                    <img src="images/Asset 14mdpi.png" class="nicon" />
+                  </div>
+                  <div class="ic2">
+                    <div class="ic2f1">
+                      Review / Confirm Teacher Assignments
+                    </div>
+                    <div class="ic2f2"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="my-3">
+                <span class="small-font margin-lr fs-16 my-3"
+                  >Select Applicable Evenings</span
+                >
+              </div>
+
+              <br />
+
+              <div class="margin-lr">
+                <table class="table">
+                  <thead class="table-secondary">
+                    <tr>
+                      <th></th>
+                      <th>Name of Group</th>
+                      <th>Parents’ Evening</th>
+                      <th>Date</th>
+                      <th>Start</th>
+                      <th>End</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <input
+                          type="radio"
+                          class="table-secondary input-radio"
+                          name="subject"
+                        />
+                      </td>
+                      <td>Autumn Term</td>
+                      <td>S5 / 6 Evening</td>
+                      <td>5th Nov 2021</td>
+                      <td>16:00</td>
+                      <td>19:00</td>
+                    </tr>
+                    <tr class="table-secondary">
+                      <td>
+                        <input
+                          type="radio"
+                          class="table-secondary input-radio"
+                          name="subject"
+                        />
+                      </td>
+                      <td>Autumn Term</td>
+                      <td>Example Parents’ Evening</td>
+                      <td>5th Nov 2021</td>
+                      <td>16:00</td>
+                      <td>19:00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="my-3">
+                <div class="margin-lr">
+                  <div class="uline"></div>
+                </div>
+              </div>
+
+              <div class="margin-lr">
+                <table class="table my-3">
+                  <thead class="table-secondary">
+                    <tr>
+                      <th></th>
+                      <th>Name of Group</th>
+                      <th>Parents’ Evening</th>
+                      <th>Date</th>
+                      <th>Start</th>
+                      <th>End</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="remove-border">
+                      <td>
+                        <input
+                          type="radio"
+                          class="table-secondary input-radio"
+                          name="subject"
+                        />
+                      </td>
+                      <td>Miss Care</td>
+                      <td>Business Management</td>
+                      <td>Business Subjects</td>
+                      <td>Update Children</td>
+                      <td>5th Nov 2021 17:32</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="my-3">
+                <div class="margin-lr">
+                  <div class="uline"></div>
+                </div>
+              </div>
+
+              <div class="margin-lr">
+                <div class="d-flex">
+                  <div class="c1e px-5" data-bs-dismiss="modal">
+                    Apply Changes
+                  </div>
+                  <div class="c1e px-5 mx-3" data-bs-dismiss="modal">
+                    Ignore Changes
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="" id="header">
+      <div class="a">
+        <div class="d">
+          <div class="d2">
+            <img src="images/Asset 1@33.33x.png" class="ico" />Parents Booking
+          </div>
+        </div>
+        <div class="list-h">
+          <ul>
+            <li class="nav-menu">
+              <a href="index.html" class="text-light text-decoration-none"
+                >Dashboard</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="set-up-school.html"
+                class="text-light text-decoration-none"
+                >Set-up school</a
+              >
+            </li>
+
+            <li class="nav-menu">
+              <a
+                href="Upload-Data-4.html"
+                class="text-light text-decoration-none"
+                >Upload data</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="Parent-Page-5.html"
+                class="text-light text-decoration-none"
+                >Parents</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="Teacher-Page-6.html"
+                class="text-light text-decoration-none"
+                >Teachers</a
+              >
+            </li>
+            <li class="nav-menu active">
+              <a href="Evenings-7c.html" class="text-light text-decoration-none"
+                >Evenings</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a href="Events-8c.html" class="text-light text-decoration-none"
+                >Events and Clubs</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="Dashboard-12d.html"
+                class="text-light text-decoration-none"
+                >Manage bookings</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a href="#" class="text-light text-decoration-none">Reports</a>
+            </li>
+            <li class="nav-menu">
+              <a href="#" class="text-light text-decoration-none"
+                >View contact</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a href="#" class="text-light text-decoration-none">Support</a>
+            </li>
+            <li class="nav-menu">
+              <a href="#" class="text-light text-decoration-none">Training</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="atx">
+        <div class="exp">
+          <div class="btn-a" onclick="toggle()">
+            <div class="mob-btn">
+              <div class="dashdiv"></div>
+              <div class="dashdiv"></div>
+              <div class="dashdiv"></div>
+            </div>
+          </div>
+        </div>
+        <div class="b-c-hdiv">
+          <div id="hedr" class="d-flex justify-content-between">
+            <div class="sn">
+              <div class="snimg">
+                <img src="images/Asset 2mdpi.png" class="schoolicon" />
+              </div>
+              <div class="sntxt">
+                <div class="scnholder">School Name</div>
+                <div class="admnnameholder">Admin name</div>
+              </div>
+            </div>
+
+            <div class="ln-lt">
+              <div class="d-flex my-1 hiddd">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  class="bi bi-power"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M7.5 1v7h1V1z" />
+                  <path
+                    d="M3 8.812a5 5 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812"
+                  />
+                </svg>
+                &nbsp;
+
+                <div>Back to Superadmin</div>
+                &nbsp;&nbsp;&nbsp;
+              </div>
+              <img src="images/Asset 6mdpi.png" class="lanicon" />
+              <div class="lan">Language</div>
+              <div class="sep"></div>
+              <div class="lout">Logout</div>
+              <img src="images/Asset 7mdpi.png" class="louticon" />
+            </div>
+          </div>
+
+          <div class="divline"></div>
+        </div>
+
+        <div id="bch" class="row">
+          <div
+            class="col-xxl-8 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-xs-12"
+            id="b"
+          >
+            <div class="sdiv">
+              <a href="index.html" class="text-dark text-decoration-none"
+                >School Name</a
+              >
+              / <span class="fw-bold">Teachers</span>
+            </div>
+
+            <div class="b2" style="height: 700px">
+              <div class="iconntitle">
+                <div class="icf">
+                  <div class="ic1">
+                    <img src="images/Asset 13mdpi.png" class="nicon" />
+                  </div>
+                  <div class="ic2">
+                    <div class="ic2f1 fw-bold my-2">
+                      Create or Edit an Evening
+                    </div>
+                    <div class="ic2f2 title-line"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="my-3">
+                <div class="ms-3">
+                  <div class="d-inline-block">
+                    <div class="c1e pad-buttton">Create New Evening</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="my-3 ms-3">
+                <p>
+                  This is a list of the parents’ evenings in this term/group:
+                </p>
+              </div>
+
+              <div class="my-3 ms-3">
+                <p>
+                  <strong> Autumn Term</strong>
+                </p>
+              </div>
+
+              <div class="form-title ms-2">
+                <div class="fd1">
+                  <div class="form-col1-title">Name / Date / Time</div>
+                </div>
+
+                <div class="sline"></div>
+                <div class="fd2">
+                  <div class="form-col1-title">Deadlines</div>
+                </div>
+
+                <div class="sline"></div>
+
+                <div class="form-div-3">
+                  <div class="form-col1-title">Bookings</div>
+                </div>
+                <div class="form-div-4"></div>
+              </div>
+              <div class="formdiv ms-2">
+                <div class="fd1">
+                  <div class="fdo">
+                    <div class="form-col1-title fs-16">
+                      Example Parents’ Evening
+                    </div>
+                    <div class="form-col1-content fs-16">
+                      21st Dec 2021 / 16:00 - 19:00
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sline ms-2"></div>
+
+                <div class="fd2 fs-16">
+                  Starts: 3rd Nov 2021<br />
+                  Ends: 1st Jan 2022
+                </div>
+                <div class="sline"></div>
+
+                <div class="form-div-3">
+                  <div class="form-div-3h">
+                    <div class="percentage-num">60%</div>
+                    <div class="percentage-bar">
+                      <div class="percentage-div">
+                        <div
+                          class="percentage-progress"
+                          style="width: 60%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="evening-drop">
+                  <div class="d-flex">
+                    <button class="c1e" style="padding: 13px 54px">Edit</button>
+                    <ol class="bg-gray">
+                      <li><a href="#">Edit Evening</a></li>
+                      <li><a href="#">Edit the Children</a></li>
+                      <li><a href="#">Edit the Teachers</a></li>
+                      <li><a href="#">Check Stats</a></li>
+                      <li><a href="#">Chase Parents</a></li>
+                      <li><a href="#">Add Breaks/Extend</a></li>
+                      <li><a href="#">Appointments</a></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="uline ms-3"></div>
+
+              <div class="formdiv ms-2">
+                <div class="fd1">
+                  <div class="form-col1-title fs-16">S5/6 Evening</div>
+                  <div class="form-col1-content fs-16">
+                    14th Jan 2021 / 16:00 - 18:00
+                  </div>
+                </div>
+
+                <div class="sline"></div>
+                <div class="fd2 fs-16">
+                  Starts: 1st Sep 2021<br />
+                  Ends: 1st Apr 2022
+                </div>
+
+                <div class="sline"></div>
+
+                <div class="form-div-3">
+                  <div class="form-div-3h">
+                    <div class="percentage-num">40%</div>
+                    <div class="percentage-bar">
+                      <div class="percentage-div">
+                        <div
+                          class="percentage-progress"
+                          style="width: 0%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="evening-dropp">
+                  <button class="c1e ms-2" style="padding: 13px 54px">
+                    Edit
+                  </button>
+                  <ol class="bg-gray">
+                    <li><a href="#">Edit Evening</a></li>
+                    <li><a href="#">Edit the Children</a></li>
+                    <li><a href="#">Edit the Teachers</a></li>
+                    <li><a href="#">Check Stats</a></li>
+                    <li><a href="#">Chase Parents</a></li>
+                    <li><a href="#">Add Breaks/Extend</a></li>
+                    <li><a href="#">Appointments</a></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xxl-4 col-xl-4 col-lg-12 col-md-12 col-sm-12 col-xs-12"
+          >
+            <div>
+              <div class="row">
+                <div class="col-md-6 pad-0">
+                  <div class="c1e">
+                    <img src="images/Asset 10mdpi.png" class="ics1" /> Book Live
+                    Training
+                  </div>
+                </div>
+                <div class="col-md-6 pad-0">
+                  <div class="c1e help">
+                    <div class="pe-3">
+                      <img src="images/Asset 8mdpi.png" class="ics1 mar-0" />
+                      <span class="fs-16">Help</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3" id="c">
+              <div class="c2">
+                <div class="iconntitle">
+                  <div class="icf">
+                    <div class="ic1">
+                      <img
+                        src="images/Control.svg"
+                        class="nicon setting-icon-img"
+                      />
+                    </div>
+                    <div class="ic2">
+                      <div class="ic2f1">Control panel</div>
+                      <div class="ic2f2"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container">
+                  <div>
+                    <div class="my-3">
+                      <p class="fs-16 mar-0 fw-bold">
+                        Hover on the “Edit” button for any advanced tasks
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        Copyright © Netmedia Ltd 2009-2023. All rights reserved. | Terms |
+        Privacy Notice.
+      </p>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

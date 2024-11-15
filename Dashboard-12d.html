@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+   <title>Dashboard 12d</title>
+</head>
+
+
+<body>
+
+  <!-- Submit Pop Up-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="border-bottom: 0;">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="btn-close cross" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div >
+
+                <div class="iconntitle">
+                  <div class="icf">
+                    <div class="ic1"><img src="images/Asset 14mdpi.png" class="nicon"></div>
+                    <div class="ic2">
+                      <div class="ic2f1">Review / Confirm Teacher Assignments</div>
+                      <div class="ic2f2"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-3">
+                    <span class="small-font margin-lr fs-16 my-3">Select Applicable Evenings</span>
+                </div>
+                 
+                 
+                <br>
+               
+                  <div class="margin-lr">
+                     <table class="table">
+                        <thead class="table-secondary">
+                          <tr>
+                            <th></th>
+                            <th>Name of Group</th>
+                            <th>Parents’ Evening</th>
+                            <th>Date</th>
+                            <th>Start </th>
+                            <th>End</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                                <input type="radio" class="table-secondary input-radio" name="subject">
+                             </td>
+                            <td>Autumn Term</td>
+                            <td>S5 / 6 Evening</td>
+                            <td>5th Nov 2021</td>
+                            <td>16:00 </td>
+                            <td>19:00</td>
+                          </tr>
+                          <tr class="table-secondary">
+                            <td>
+                                <input type="radio" class="table-secondary input-radio" name="subject">
+                             </td>
+                            <td>Autumn Term</td>
+                            <td>Example Parents’ Evening</td>
+                            <td>5th Nov 2021</td>
+                            <td>16:00 </td>
+                            <td>19:00</td>
+                          </tr>
+                         
+                        </tbody>
+                      </table>
+                  </div>
+
+				  <div class="my-3">
+					<div class="margin-lr">
+						<div class="uline"></div>
+					</div>
+					
+				 </div>
+
+                  <div class="margin-lr">
+                    <table class="table my-3">
+                       <thead class="table-secondary">
+                         <tr>
+                           <th></th>
+                           <th>Name of Group</th>
+                           <th>Parents’ Evening</th>
+                           <th>Date</th>
+                           <th>Start </th>
+                           <th>End</th>
+                         </tr>
+                       </thead>
+                       <tbody>
+                         <tr class="remove-border">
+                           <td>
+                               <input type="radio" class="table-secondary input-radio" name="subject">
+                            </td>
+                           <td>Miss Care</td>
+                           <td>Business Management</td>
+                           <td> Business Subjects</td>
+                           <td>Update Children</td>
+                           <td> 5th Nov 2021 17:32</td>
+                         </tr>
+                        
+                       </tbody>
+                     </table>
+                 </div>
+
+				 <div class="my-3">
+					<div class="margin-lr">
+						<div class="uline"></div>
+					</div>
+					
+				 </div>
+				 
+                 <div class="margin-lr">
+                    <div class="d-flex">
+                        <div class="c1e px-5" data-bs-dismiss="modal"> Apply Changes</div>
+                        <div class="c1e px-5 mx-3" data-bs-dismiss="modal">Ignore Changes</div>
+                    </div>
+                 </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+  <div class="" id="header">
+    <div class="a">
+      <div class="d">
+        <div class="d2"><img src="images/Asset 1@33.33x.png" class="ico">Parents Booking</div>
+      </div>
+      <div class="list-h">
+        <ul>
+            <li class=" nav-menu"><a href="index.html" class="text-light text-decoration-none ">Dashboard</a></li>
+			<li class="nav-menu " ><a href="set-up-school.html" class="text-light text-decoration-none ">Set-up school</a> </li>
+            <li class="nav-menu"><a href="Upload-Data-4.html" class="text-light text-decoration-none ">Upload data</a> </li>
+            <li class="nav-menu "><a href="Parent-Page-5.html" class="text-light text-decoration-none ">Parents</a> </li>
+            <li class="nav-menu"><a href="Teacher-Page-6.html" class="text-light text-decoration-none ">Teachers</a> </li>
+            <li class="nav-menu"><a href="Evenings-7a.html" class="text-light text-decoration-none ">Evenings</a> </li>
+            <li class="nav-menu"><a href="Events-8c.html" class="text-light text-decoration-none ">Events and Clubs</a> </li>
+            <li class="nav-menu active"><a href="Dashboard-12d.html" class="text-light text-decoration-none ">Manage bookings</a> </li>
+            <li class="nav-menu"><a href="Reports-10a.html" class="text-light text-decoration-none ">Reports</a> </li>
+            <li class="nav-menu"><a href="#" class="text-light text-decoration-none ">View contact</a> </li>
+            <li class="nav-menu"><a href="#" class="text-light text-decoration-none ">Support</a> </li>
+            <li class="nav-menu"><a href="#" class="text-light text-decoration-none ">Training</a> </li>
+          </ul>
+      </div>
+
+    </div>
+
+
+    <div class="atx">
+      <div class="exp">
+        <div class="btn-a" onclick="toggle()">
+          <div class="mob-btn">
+            <div class="dashdiv"></div>
+            <div class="dashdiv"></div>
+            <div class="dashdiv"></div>
+          </div>
+        </div>
+      </div>
+      <div class="b-c-hdiv">
+        <div id="hedr" class="d-flex justify-content-between">
+          <div class="sn">
+            <div class="snimg"><img src="images/Asset 2mdpi.png" class="schoolicon"></div>
+            <div class="sntxt">
+              <div class="scnholder">School Name</div>
+              <div class="admnnameholder">Admin name</div>
+            </div>
+          </div>
+
+          <div class="ln-lt">
+            <img src="images/Asset 6mdpi.png" class="lanicon">
+            <div class="lan">Language</div>
+            <div class="sep"></div>
+            <div class="lout"> Logout</div><img src="images/Asset 7mdpi.png" class="louticon">
+          </div>
+
+        </div>
+
+
+
+
+
+        <div class="divline"></div>
+      </div>
+
+
+      <div id="bch" class="row">
+        <div class="col-xxl-8 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-xs-12" id="b">
+          <div class="sdiv"><a href="#" class="text-dark text-decoration-none">School Name</a> / Dashboard / <span class="fw-bold">Manage Bookings</span></div>
+          <div class="b1 my-5">
+
+            <div class="iconntitle">
+              <div class="icf">
+                <!-- <div class="ic1"><img src="images/Admin.svg" class="nicon"></div> -->
+                <div>
+                    
+                </div>
+                <div class="ic2">
+                  <div class="ic2f1 fs-4">Now: Mr. Alan Smith (Callum Smith)</div>
+                  <!-- <div class="ic2f2"></div> -->
+                </div>
+                
+              </div>
+            </div>
+
+            <div>
+
+                <div>
+                    <div class="container">
+                        <div> 
+                            <img src="images/person1.png" class="w-100">
+                        </div>
+
+                        <div class="d-flex justify-content-center my-4 icons">
+                          <div class=" bg-dark p-2 rounded-circle mx-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-mic-fill text-light" viewBox="0 0 16 16">
+                              <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0z"/>
+                              <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5"/>
+                            </svg>
+                          </div>
+                          <div class=" bg-danger p-2 rounded-circle mx-1">
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-telephone-fill text-light" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                            </svg>
+                          </div>
+                          <div class=" bg-dark p-2 rounded-circle mx-1">
+                           
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-camera-video-fill text-light" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2z"/>
+                            </svg>
+                            
+                          </div>
+                          <div class=" bg-dark p-2 rounded-circle mx-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-display text-light" viewBox="0 0 16 16">
+                              <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z"/>
+                            </svg>
+                          </div>
+                          <div class=" bg-dark p-2 rounded-circle mx-1">
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-fill text-light" viewBox="0 0 16 16">
+                              <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div class="my-3">
+                            <div class="uline"></div>
+                        </div>
+
+                        <div>
+                            <div>
+                              <div class="my-1">
+                                <p>Schedule</p>
+                              </div>
+                                <div>
+                                    <table class="table table-striped">
+                                       <thead class="table-secondary">
+                                         <tr>
+                                           <th>Time</th>
+                                           <th>Child</th>
+                                           <th>Parent</th>
+                                         </tr>
+                                       </thead>
+                                       <tbody>
+                                         <tr>
+                                           <td>8th Dec 2021 / 17:30</td>
+                                           <td>Callum Smith / S6</td>
+                                           <td>Alan Smith</td>
+                                         </tr>
+                                         <tr>
+                                            <td>8th Dec 2021 / 17:30</td>
+                                            <td>Callum Smith / S6</td>
+                                            <td>Alan Smith</td>
+                                          </tr>
+                                         
+                                          <tr>
+                                            <td>8th Dec 2021 / 17:30</td>
+                                            <td>Callum Smith / S6</td>
+                                            <td>Alan Smith</td>
+                                          </tr>
+                                          <tr>
+                                            <td>8th Dec 2021 / 17:30</td>
+                                            <td>Callum Smith / S6</td>
+                                            <td>Alan Smith</td>
+                                          </tr>
+                                          <tr>
+                                            <td>8th Dec 2021 / 17:30</td>
+                                            <td>Callum Smith / S6</td>
+                                            <td>Alan Smith</td>
+                                          </tr>
+                                       </tbody>
+                                     </table>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                
+                
+            </div>
+
+          </div>
+          
+        </div>
+        <div class="col-xxl-4 col-xl-4 col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+          <div>
+            <div class="row">
+              <div class="col-md-6 pad-0">
+                <div class="c1e">
+                  <img src="images/Asset 10mdpi.png" class="ics1"> Book
+                  Live Training
+                </div>
+              </div>
+              <div class="col-md-6 pad-0">
+                <div class="c1e help">
+                 <div class="pe-3"> <img src="images/Asset 8mdpi.png" class="ics1 mar-0"> <span class="fs-16">Help</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div>
+                <p>Time remaining: 05:32</p>
+            </div>
+            <div>
+                <img src="images/person1.png" class="w-75">
+            </div>
+            <div class="my-3">
+                <img src="images/person2.png" class="w-75">
+            </div>
+          </div>
+          
+				  
+          </div>
+            </div>
+			
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <div class="footer">
+	<p>Copyright © Netmedia Ltd 2009-2023. All rights reserved. | Terms | Privacy Notice. </p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+</body>
+
+
+</html>

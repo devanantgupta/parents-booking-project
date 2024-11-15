@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+
+<body>
+
+
+	    
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+      style="margin: 130px 0px !important;"
+    >
+      <div class="modal-dialog" style="max-width: 760px !important">
+        <div class="modal-content ">
+          <div class="text-end" style="border-bottom: 0">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button
+              type="button"
+              class="btn-close cross"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body pad-0 mb-5">
+            <div class="mx-3">
+              <div>
+                <div class="iconntitle">
+                  <div class="icf">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-exclamation-circle ms-2 text-info my-2" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                        <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+                      </svg>
+                  <div class="ic2 ms-1">
+                    <div class="ic2f1 " style="background-color: white;">Information</div>
+                    <div class="ic2f2 ms-3" style="    min-width: 37vw"></div>
+                  </div>
+                  </div>
+                </div>					 
+              </div>
+              <div class="my-3 margin-lr">
+                <label class="d-block fw-bold">Warning: Clicking 'Cancel Selected Booking below will cancel the bookings you ticked in the booking table.</label>
+                
+              </div>
+              <div class="my-2 margin-lr">
+                <label class="d-block fw-bold">Please enter any comments below which you would like to send to the parent as part of their cancellation confirmation e-mail.</label>
+                
+              </div>
+
+              <div class="my-3 margin-lr">
+                <label class="d-block">if you wish to turn on or off the sending of a cancellation e-mail, goto: 'Set Up School'> 'Preferences> Enall the parent if Admin or Staff users cancel parent appointment(s)?' and turn this setting on or off before clicking Cancel Selected Bookings below</label>
+                
+              </div>
+
+			  <div class="margin-lr my-3">
+				<input type="text" class="w-100" />
+			  </div>
+              <div class="margin-lr">
+                <div class="d-flex">
+                  <div class="c1e px-4"  data-bs-dismiss="modal">Cancel Appointments Selected Below</div>
+                  &nbsp;
+                  <div class="c1e px-3"  data-bs-dismiss="modal">Close</div>
+                </div>
+             </div>
+            </div>
+
+         
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+  <div class="" id="header">
+    <div class="a">
+      <div class="d">
+        <div class="d2"><img src="images/Asset 1@33.33x.png" class="ico">Parents Booking</div>
+      </div>
+      <div class="list-h">
+        <ul>
+			<li class="nav-menu"><a href="index.html" class="text-light text-decoration-none ">Dashboard</a></li>
+			<li class="nav-menu" ><a href="set-up-school.html" class="text-light text-decoration-none ">Set-up school</a> </li>
+			<li class="nav-menu"><a href="Upload-Data-4.html" class="text-light text-decoration-none ">Upload data</a> </li>
+			<li class="nav-menu"><a href="Parent-Page-5.html" class="text-light text-decoration-none ">Parents</a> </li>
+			<li class="nav-menu"><a href="Teacher-Page-6.html" class="text-light text-decoration-none ">Teachers</a> </li>
+			<li class="nav-menu"><a href="Evenings-7c.html" class="text-light text-decoration-none ">Evenings</a> </li>
+			<li class="nav-menu"><a href="Events-8c.html" class="text-light text-decoration-none ">Events and Clubs</a> </li>
+			<li class="nav-menu active"><a href="Dashboard-12d.html" class="text-light text-decoration-none ">Manage bookings</a> </li>
+			<li class="nav-menu"><a href="Reports-10a.html" class="text-light text-decoration-none ">Reports</a> </li>
+			<li class="nav-menu"><a href="#" class="text-light text-decoration-none ">View contact</a> </li>
+			<li class="nav-menu"><a href="#" class="text-light text-decoration-none ">Support</a> </li>
+			<li class="nav-menu"><a href="#" class="text-light text-decoration-none ">Training</a> </li>
+		  </ul>
+      </div>
+
+    </div>
+
+
+    <div class="atx">
+      <div class="exp">
+        <div class="btn-a" onclick="toggle()">
+          <div class="mob-btn">
+            <div class="dashdiv"></div>
+            <div class="dashdiv"></div>
+            <div class="dashdiv"></div>
+          </div>
+        </div>
+      </div>
+      <div class="b-c-hdiv">
+        <div id="hedr" class="d-flex justify-content-between">
+          <div class="sn">
+            <div class="snimg"><img src="images/Asset 2mdpi.png" class="schoolicon"></div>
+            <div class="sntxt">
+              <div class="scnholder">School Name</div>
+              <div class="admnnameholder">Admin name</div>
+            </div>
+          </div>
+
+          <div class="ln-lt">
+              <div class="d-flex my-1 hiddd">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  class="bi bi-power"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M7.5 1v7h1V1z" />
+                  <path
+                    d="M3 8.812a5 5 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812"
+                  />
+                </svg>
+                &nbsp;
+
+                <div>Back to Superadmin</div>
+                &nbsp;&nbsp;&nbsp;
+              </div>
+              <img src="images/Asset 6mdpi.png" class="lanicon" />
+              <div class="lan">Language</div>
+              <div class="sep"></div>
+              <div class="lout">Logout</div>
+              <img src="images/Asset 7mdpi.png" class="louticon" />
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="divline"></div>
+      </div>
+
+
+      <div id="bch" class="row">
+        <div class="col-xxl-8 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-xs-12" id="b">
+          <div class="sdiv"><a href="#" class="text-dark text-decoration-none">School Name</a> / <a href="#" class="text-dark text-decoration-none">Manage Bookings</a> / <span class="fw-bold">Overview</span></div>
+          <div class="b1">
+
+            <div class="iconntitle">
+              <div class="icf">
+                <div class="ic1"><img src="images/Calender.svg" class="nicon"></div>
+                <div class="ic2">
+                  <div class="ic2f1">View Bookings</div>
+                  <div class="ic2f2"></div>
+                </div>
+              </div>
+            </div>
+			<div class="my-3 mx-3">
+				
+			</div>			
+				<div>
+					<div>
+						<p class="mt-3 fs-5">Example Parents’ Evening 17th Nov 2021</p>
+						<p class="my-1">To make your booking, select the subject, followed by the teacher.</p>
+						<p>Then choose a free time slot from the list.</p>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="f1a">
+							  <select
+								name="format"
+								id="format"
+								class="bg-gray w-100"
+								style="min-width: 150px; max-width: 386px; font-weight: bold"
+							  >
+								<option selected="" disabled="">Select a subject</option>
+								<option value="">Subject 1</option>
+								<option value="">Subject 2</option>
+								<option value="">Subject 3</option>
+							  </select>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="f1a">
+							  <select
+								name="format"
+								id="format"
+								class="bg-gray w-100"
+								style="min-width: 150px; max-width: 386px; font-weight: bold"
+							  >
+								<option selected="" disabled="">Select a teacher</option>
+								<option value="">Teacher 1</option>
+								<option value="">Teacher 2</option>
+								<option value="">Teacher 3</option>
+							  </select>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form d-inline-block py-2 float-end position-relative">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="16"
+									height="16"
+									fill="currentColor"
+									class="bi bi-search position-absolute my-1 mx-2"
+									viewBox="0 0 16 16"
+								>
+									<path
+									d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+									/>
+								</svg>
+								<input
+									type="text"
+									class="form-input px-5 py-1 rounded-pill fs-16 border border-dark"
+									placeholder="Search "
+								/>
+								<span class="left-pan"
+									><i class="fa fa-microphone"></i
+								></span>
+							</div>
+						</div>
+						<div class="my-4">
+							<div class="uline"></div>
+						</div>
+						<div class="table-responsive">
+							<table class="table">
+								<tbody>
+									<tr>
+										<td>
+											<input class="form-check-input rounded-circle" 	type="checkbox"	value="" id="flexcheckdefault"/>
+										</td>
+										<td>08:00</td>
+										<td>Calum Smith, S6 (Mr Alan Smith)</td>
+									</tr>
+									<tr>
+										<td>
+											<input class="form-check-input rounded-circle" 	type="checkbox"	value="" id="flexcheckdefault"/>
+										</td>
+										<td>09:00</td>
+										<td>Calum Smith, S6 (Mr Alan Smith)</td>
+									</tr>
+									<tr>
+										<td>
+											<input class="form-check-input rounded-circle" 	type="checkbox"	value="" id="flexcheckdefault"/>
+										</td>
+										<td>10:00</td>
+										<td>Calum Smith, S6 (Mr Alan Smith)</td>
+									</tr>
+									<tr>
+										<td>
+											<input class="form-check-input rounded-circle" 	type="checkbox"	value="" id="flexcheckdefault"/>
+										</td>
+										<td>11:00</td>
+										<td>Calum Smith, S6 (Mr Alan Smith)</td>
+									</tr>
+									<tr>
+										<td>
+											<input class="form-check-input rounded-circle" 	type="checkbox"	value="" id="flexcheckdefault"/>
+										</td>
+										<td>12:00</td>
+										<td>Calum Smith, S6 (Mr Alan Smith)</td>
+									</tr>
+									<tr>
+										<td>
+											<input class="form-check-input rounded-circle" 	type="checkbox"	value="" id="flexcheckdefault"/>
+										</td>
+										<td>13:00</td>
+										<td>Calum Smith, S6 (Mr Alan Smith)</td>
+									</tr>
+									<tr>
+										<td>
+											<input class="form-check-input rounded-circle" 	type="checkbox"	value="" id="flexcheckdefault"/>
+										</td>
+										<td>14:00</td>
+										<td>Calum Smith, S6 (Mr Alan Smith)</td>
+									</tr>
+									<tr>
+										<td>
+											<input class="form-check-input rounded-circle" 	type="checkbox"	value="" id="flexcheckdefault"/>
+										</td>
+										<td>15:00</td>
+										<td>Calum Smith, S6 (Mr Alan Smith)</td>
+									</tr>
+									<tr>
+										<td>
+											<input class="form-check-input rounded-circle" 	type="checkbox"	value="" id="flexcheckdefault"/>
+										</td>
+										<td>16:00</td>
+										<td>Calum Smith, S6 (Mr Alan Smith)</td>
+									</tr>
+									<tr>
+										<td>
+											<input class="form-check-input rounded-circle" 	type="checkbox"	value="" id="flexcheckdefault"/>
+										</td>
+										<td>17:00</td>
+										<td>Calum Smith, S6 (Mr Alan Smith)</td>
+									</tr>
+									<tr>
+										<td>
+											<input class="form-check-input rounded-circle" 	type="checkbox"	value="" id="flexcheckdefault"/>
+										</td>
+										<td>18:00</td>
+										<td>Calum Smith, S6 (Mr Alan Smith)</td>
+									</tr>
+									<tr>
+										<td>
+											<input class="form-check-input rounded-circle" 	type="checkbox"	value="" id="flexcheckdefault"/>
+										</td>
+										<td>19:00</td>
+										<td>Calum Smith, S6 (Mr Alan Smith)</td>
+									</tr>
+									<tr>
+										<td>
+											<input class="form-check-input rounded-circle" 	type="checkbox"	value="" id="flexcheckdefault"/>
+										</td>
+										<td>20:00</td>
+										<td>Calum Smith, S6 (Mr Alan Smith)</td>
+									</tr>
+									<tr>
+										<td>
+											<input class="form-check-input rounded-circle" 	type="checkbox"	value="" id="flexcheckdefault"/>
+										</td>
+										<td>21:00</td>
+										<td>Calum Smith, S6 (Mr Alan Smith)</td>
+									</tr>
+									<tr>
+										<td>
+											<input class="form-check-input rounded-circle" 	type="checkbox"	value="" id="flexcheckdefault"/>
+										</td>
+										<td>22:00</td>
+										<td>Calum Smith, S6 (Mr Alan Smith)</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>	
+						
+					</div>
+					<div>
+						
+					</div>
+					<div>
+						
+
+					</div>
+				</div>
+				
+          </div>
+          <!-- <div class="b2"></div> -->
+        </div>
+        <div class="col-xxl-4 col-xl-4 col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+			<div>
+				<div class="row">
+				  <div class="col-md-6 pad-0">
+					<div class="c1e">
+					  <img src="images/Asset 10mdpi.png" class="ics1"> Book
+					  Live Training
+					</div>
+				  </div>
+				  <div class="col-md-6 pad-0">
+					<div class="c1e help">
+					 <div class="pe-3"> <img src="images/Asset 8mdpi.png" class="ics1 mar-0"> <span class="fs-16">Help</span></div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+          <div id="c" class="mt-3">
+			<div class="mt-3 mx-3">
+				<div class="iconntitle">
+				  <div class="icf">
+					<div class="ic1"><img src="images/Control.svg" class="nicon"></div>
+					<div class="ic2">
+					  <div class="ic2f1">Control Panel</div>
+					  <div class="ic2f2" style="min-width: 15vw;">
+						
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<div class="f1 ms-3">
+					<div>
+						<h5 class="my-4 head5">Raspberry Example School</h5>
+						<p class="mar-0"><span class="fw-bolder">School Contact Details:</span>School Office</p>
+						<p class="mar-0"><span class="fw-bolder">Phone:</span>01444 555 666</p>
+						<p class="mar-0"><span class="fw-bolder">Email:</span>hello@raspberryschool.com</p>
+					</div>
+					<div class="f1b text-center my-3">
+						<div class="tsb-h">
+							<div class="">
+								<button class="c1e w-100 py-3   " type="file" data-bs-toggle="modal" data-bs-target="#exampleModal">
+									
+									<a href="#" class="text-decoration-none text-light fs-16">
+										Cancel Selected Appointments
+									</a> 
+								</button>
+								<button class="c1e w-100 py-3  " type="file" data-bs-toggle="modal" data-bs-target="#exampleModal">
+									<a href="#" class="text-decoration-none text-light fs-16">
+										Email Appointments To A Parent
+									</a> 
+								</button>
+								<button class="c1e w-100 py-3  " type="file" data-bs-toggle="modal" data-bs-target="#exampleModal">
+									<a href="#" class="text-decoration-none text-light fs-16">
+										Share or Transfer Appointments
+									</a> 
+								</button>
+								<button class="c1e w-100 py-3  " type="file" data-bs-toggle="modal" data-bs-target="#exampleModal">
+									<a href="#" class="text-decoration-none text-light fs-16">
+										Print A Parent’s Appointments
+									</a> 
+								</button>
+								<button class="c1e w-100 py-3  " type="file" data-bs-toggle="modal" data-bs-target="#exampleModal">
+									<a href="#" class="text-decoration-none text-light fs-16">
+										Cancel All Of A Parent’s Appointments
+									</a> 
+								</button>
+							</div>
+						</div>
+					</div>
+				
+				</div>
+         </div>
+		  </div>
+        </div>  
+	 </div>
+	
+  
+   <div class="footer">
+	<p>Copyright © Netmedia Ltd 2009-2023. All rights reserved. | Terms | Privacy Notice. </p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+
+</body>
+
+
+</html>

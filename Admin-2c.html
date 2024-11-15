@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+   <title>Admin 2c</title>
+</head>
+
+
+<body>
+
+  <!-- Submit Pop Up-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="border-bottom: 0;">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="btn-close cross" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div >
+
+                <div class="iconntitle">
+                  <div class="icf">
+                    <div class="ic1"><img src="images/Asset 14mdpi.png" class="nicon"></div>
+                    <div class="ic2">
+                      <div class="ic2f1">Review / Confirm Teacher Assignments</div>
+                      <div class="ic2f2"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-3">
+                    <span class="small-font margin-lr fs-16 my-3">Select Applicable Evenings</span>
+                </div>
+                 
+                 
+                <br>
+               
+                  <div class="margin-lr">
+                     <table class="table">
+                        <thead class="table-secondary">
+                          <tr>
+                            <th></th>
+                            <th>Name of Group</th>
+                            <th>Parents’ Evening</th>
+                            <th>Date</th>
+                            <th>Start </th>
+                            <th>End</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                                <input type="radio" class="table-secondary input-radio" name="subject">
+                             </td>
+                            <td>Autumn Term</td>
+                            <td>S5 / 6 Evening</td>
+                            <td>5th Nov 2021</td>
+                            <td>16:00 </td>
+                            <td>19:00</td>
+                          </tr>
+                          <tr class="table-secondary">
+                            <td>
+                                <input type="radio" class="table-secondary input-radio" name="subject">
+                             </td>
+                            <td>Autumn Term</td>
+                            <td>Example Parents’ Evening</td>
+                            <td>5th Nov 2021</td>
+                            <td>16:00 </td>
+                            <td>19:00</td>
+                          </tr>
+                         
+                        </tbody>
+                      </table>
+                  </div>
+
+				  <div class="my-3">
+					<div class="margin-lr">
+						<div class="uline"></div>
+					</div>
+					
+				 </div>
+
+                  <div class="margin-lr">
+                    <table class="table my-3">
+                       <thead class="table-secondary">
+                         <tr>
+                           <th></th>
+                           <th>Name of Group</th>
+                           <th>Parents’ Evening</th>
+                           <th>Date</th>
+                           <th>Start </th>
+                           <th>End</th>
+                         </tr>
+                       </thead>
+                       <tbody>
+                         <tr class="remove-border">
+                           <td>
+                               <input type="radio" class="table-secondary input-radio" name="subject">
+                            </td>
+                           <td>Miss Care</td>
+                           <td>Business Management</td>
+                           <td> Business Subjects</td>
+                           <td>Update Children</td>
+                           <td> 5th Nov 2021 17:32</td>
+                         </tr>
+                        
+                       </tbody>
+                     </table>
+                 </div>
+
+				 <div class="my-3">
+					<div class="margin-lr">
+						<div class="uline"></div>
+					</div>
+					
+				 </div>
+				 
+                 <div class="margin-lr">
+                    <div class="d-flex">
+                        <div class="c1e px-5" data-bs-dismiss="modal"> Apply Changes</div>
+                        <div class="c1e px-5 mx-3" data-bs-dismiss="modal">Ignore Changes</div>
+                    </div>
+                 </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+  <div class="" id="header">
+    <div class="a">
+      <div class="d">
+        <div class="d2"><img src="images/Asset 1@33.33x.png" class="ico">Parents Booking</div>
+      </div>
+      <div class="list-h">
+        <ul>
+            <li class=" nav-menu"><a href="index.html" class="text-light text-decoration-none ">Dashboard</a></li>
+			<li class="nav-menu active" ><a href="set-up-school.html" class="text-light text-decoration-none ">Set-up school</a> </li>
+            <li class="nav-menu"><a href="Upload-Data-4.html" class="text-light text-decoration-none ">Upload data</a> </li>
+            <li class="nav-menu"><a href="Parent-Page-5.html" class="text-light text-decoration-none ">Parents</a> </li>
+            <li class="nav-menu"><a href="Teacher-Page-6.html" class="text-light text-decoration-none ">Teachers</a> </li>
+            <li class="nav-menu"><a href="Evenings-7c.html" class="text-light text-decoration-none ">Evenings</a> </li>
+            <li class="nav-menu"><a href="Events-8c.html" class="text-light text-decoration-none ">Events and Clubs</a> </li>
+            <li class="nav-menu"><a href="Dashboard-12d.html" class="text-light text-decoration-none ">Manage bookings</a> </li>
+            <li class="nav-menu"><a href="Reports-10a.html" class="text-light text-decoration-none ">Reports</a> </li>
+            <li class="nav-menu"><a href="#" class="text-light text-decoration-none ">View contact</a> </li>
+            <li class="nav-menu"><a href="#" class="text-light text-decoration-none ">Support</a> </li>
+            <li class="nav-menu"><a href="#" class="text-light text-decoration-none ">Training</a> </li>
+          </ul>
+      </div>
+
+    </div>
+
+
+    <div class="atx">
+      <div class="exp">
+        <div class="btn-a" onclick="toggle()">
+          <div class="mob-btn">
+            <div class="dashdiv"></div>
+            <div class="dashdiv"></div>
+            <div class="dashdiv"></div>
+          </div>
+        </div>
+      </div>
+      <div class="b-c-hdiv">
+        <div id="hedr" class="d-flex justify-content-between display-block">
+          <div class="sn">
+            <div class="snimg"><img src="images/Asset 2mdpi.png" class="schoolicon"></div>
+            <div class="sntxt">
+              <div class="scnholder">School Name</div>
+              <div class="admnnameholder">Admin name</div>
+            </div>
+          </div>
+
+          <div class="ln-lt">
+              <div class="d-flex my-1 hiddd">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  class="bi bi-power"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M7.5 1v7h1V1z" />
+                  <path
+                    d="M3 8.812a5 5 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812"
+                  />
+                </svg>
+                &nbsp;
+
+                <div>Back to Superadmin</div>
+                &nbsp;&nbsp;&nbsp;
+              </div>
+              <img src="images/Asset 6mdpi.png" class="lanicon" />
+              <div class="lan">Language</div>
+              <div class="sep"></div>
+              <div class="lout">Logout</div>
+              <img src="images/Asset 7mdpi.png" class="louticon" />
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="divline"></div>
+      </div>
+
+
+      <div id="bch" class="row display-block">
+        <div class="col-xxl-8 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-xs-12" id="b">
+          <div class="sdiv"><a href="index.html" class="text-dark text-decoration-none">School Name</a> / <a href="set-up-school.html" class="text-dark text-decoration-none">Set-up school</a> /<span class="fw-bold"> Software Preferences</span></div>
+          <div class="b1">
+
+            <div class="iconntitle">
+              <div class="icf">
+                <div class="ic1"><img src="images/Software.svg" class="nicon"></div>
+                <div class="ic2">
+                  <div class="ic2f1 fw-bold my-2">Software Preferences</div>
+                  <div class="ic2f2 title-line"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="my-2">
+                <div class="row display-block">
+                    <div class="col-md-6">
+                        <div class="container">
+                            <p class="my-2">Date format for your school</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="container">
+                            <div class="f1a "> 
+                                <select name="format" id="format" class="bg-gray" style="max-width: 310px;">
+                                    <option selected="" disabled="" >ddd MMM yyyy</option>
+                                    <option value="">1 Contacts</option>
+                                    <option value="">2 Contacts</option>
+                                    <option value="">3 Contacts</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="row display-block">
+                    <div class="col-md-6">
+                        <div class="container">
+                            <p class="my-2">Timezone</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="container">
+                            <div class="f1a "> 
+                                <select name="format" id="format" class="bg-gray" style="max-width: 310px;">
+                                    <option selected="" disabled="">Greenwich Mean Time</option>
+                                    <option value="">1 Contacts</option>
+                                    <option value="">2 Contacts</option>
+                                    <option value="">3 Contacts</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="row display-block">
+                    <div class="col-md-6">
+                        <div class="container">
+                            <p class="my-2">Currency</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="container">
+                            <div class="f1a "> 
+                                <select name="format" id="format" class="bg-gray" style="max-width: 310px;">
+                                    <option selected="" disabled="">GBP</option>
+                                    <option value="">1 Contacts</option>
+                                    <option value="">2 Contacts</option>
+                                    <option value="">3 Contacts</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="d-flex justify-content-between display-block">
+                    <div class="">
+                        <div class="container">
+                            <p class="my-2">Profile school to help set up events more easily?</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="container">
+                            <div class="f1a "> 
+                                <input
+                                      class="form-check-input rounded-circle "
+                                      type="checkbox"
+                                      value=""
+                                      id="flexCheckDefault"
+                                      />                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="row display-block">
+                    <div class="col-md-6">
+                        <div class="container">
+                            <p class="my-2">Do you want to set a maximum limit for how many Clubs 
+                                a student can be signed up to within one 'term/group'? 
+                                Leaving blank means there is no limit.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="container">
+                            <div class="f1a "> 
+                                <select name="format" id="format" class="bg-gray" style="max-width: 310px;">
+                                    <option selected="" disabled=""></option>
+                                    <option value="">1 Contacts</option>
+                                    <option value="">2 Contacts</option>
+                                    <option value="">3 Contacts</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="row display-block">
+                    <div class="col-md-8">
+                        <div class="container">
+                            <p class="my-2">Should parents be able to enter comments when booking a teacher?</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="container">
+                            <div class="f1a justify-content-end display-block" > 
+                                <input
+                                      class="form-check-input rounded-circle "
+                                      type="checkbox"
+                                      value=""
+                                      id="flexCheckDefault"
+                                      />                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="row display-block">
+                    <div class="col-md-8">
+                        <div class="container">
+                            <p class="my-2">Give staff read only access? This will stop Staff users being 
+                                able to make or delete bookings.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="container ">
+                            <div class="f1a justify-content-end display-block display-block" > 
+                                <input
+                                      class="form-check-input rounded-circle "
+                                      type="checkbox"
+                                      value=""
+                                      id="flexCheckDefault"
+                                      />                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="row display-block">
+                    <div class="col-md-8">
+                        <div class="container">
+                            <p class="my-2">Show forthcoming parents' evenings on parents' login page?</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="container">
+                            <div class="f1a justify-content-end display-block" > 
+                                <input
+                                      class="form-check-input rounded-circle "
+                                      type="checkbox"
+                                      value=""
+                                      id="flexCheckDefault"
+                                      />                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="row display-block">
+                    <div class="col-md-8">
+                        <div class="container">
+                            <p class="my-2">Send school software Admin an email with parents' 
+                                new contact details (e.g. e-mail or telephone)</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="container">
+                            <div class="f1a justify-content-end display-block" > 
+                                <input
+                                      class="form-check-input rounded-circle "
+                                      type="checkbox"
+                                      value=""
+                                      id="flexCheckDefault"
+                                      />                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="row display-block">
+                    <div class="col-md-8">
+                        <div class="container">
+                            <p class="my-2">Do you want us to email you a backup of all teacher/parent 
+appointments 3x times per day?</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="container">
+                            <div class="f1a justify-content-end display-block" > 
+                                <input
+                                      class="form-check-input rounded-circle "
+                                      type="checkbox"
+                                      value=""
+                                      id="flexCheckDefault"
+                                      />                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="row display-block">
+                    <div class="col-md-8">
+                        <div class="container">
+                            <p class="my-2">Email the parent if Admin or Staff users cancels parent appointment(s)?</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="container">
+                            <div class="f1a justify-content-end display-block" > 
+                                <input
+                                      class="form-check-input rounded-circle "
+                                      type="checkbox"
+                                      value=""
+                                      id="flexCheckDefault"
+                                      />                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="d-flex justify-content-between display-block">
+                    <div class="">
+                        <div class="container">
+                            <p class="my-2">Can parents send feedback message to the school from their booking area?</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="container">
+                            <div class="f1a "> 
+                                <input
+                                      class="form-check-input rounded-circle "
+                                      type="checkbox"
+                                      value=""
+                                      id="flexCheckDefault"
+                                      />                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="d-flex justify-content-between display-block">
+                    <div class="">
+                        <div class="container">
+                            <p class="my-2">Hide 'personal' parent data (email address and phone number) from Staff <br>
+                                users? Staff will still be able to read comments submitted by parents.</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="container">
+                            <div class="f1a "> 
+                                <input
+                                      class="form-check-input rounded-circle "
+                                      type="checkbox"
+                                      value=""
+                                      id="flexCheckDefault"
+                                      />                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="d-flex justify-content-between display-block">
+                    <div class="">
+                        <div class="container">
+                            <p class="my-2">Are teachers allowed to set up 1-to-1 video meetings?</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="container">
+                            <div class="f1a "> 
+                                <input
+                                      class="form-check-input rounded-circle "
+                                      type="checkbox"
+                                      value=""
+                                      id="flexCheckDefault"
+                                      />                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="d-flex justify-content-between display-block">
+                    <div class="">
+                        <div class="container">
+                            <p class="my-2">Hide the Manage Bookings page from Staff users?</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="container">
+                            <div class="f1a "> 
+                                <input
+                                      class="form-check-input rounded-circle "
+                                      type="checkbox"
+                                      value=""
+                                      id="flexCheckDefault"
+                                      />                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="d-flex justify-content-between display-block">
+                    <div class="">
+                        <div class="container">
+                            <p class="my-2">Hide the Reports page from Staff users?</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="container">
+                            <div class="f1a "> 
+                                <input
+                                      class="form-check-input rounded-circle "
+                                      type="checkbox"
+                                      value=""
+                                      id="flexCheckDefault"
+                                      />                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="d-flex justify-content-between display-block">
+                    <div class="">
+                        <div class="container">
+                            <p class="my-2">Show "Make/Edit My Own Bookings" option to parents</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between display-block">
+                        <div class="container">
+                            <div class="f1a "> 
+                                <input
+                                      class="form-check-input rounded-circle "
+                                      type="checkbox"
+                                      value=""
+                                      id="flexCheckDefault"
+                                      />                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="d-flex justify-content-between display-block">
+                    <div class="">
+                        <div class="container">
+                            <p class="my-2">Show "Suggest My Bookings" option to parents</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="container">
+                            <div class="f1a "> 
+                                <input
+                                      class="form-check-input rounded-circle "
+                                      type="checkbox"
+                                      value=""
+                                      id="flexCheckDefault"
+                                      />                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="d-flex justify-content-between display-block">
+                    <div class="">
+                        <div class="container">
+                            <p class="my-2">Show the 'Select all' link on parents' Suggest My Bookings' page?</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="container">
+                            <div class="f1a "> 
+                                <input
+                                      class="form-check-input rounded-circle "
+                                      type="checkbox"
+                                      value=""
+                                      id="flexCheckDefault"
+                                      />                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="d-flex justify-content-between display-block display-block">
+                    <div class="">
+                        <div class="container">
+                            <p class="my-2">Enable 'Allow other parents and carers of this student to join video calls?' feature?</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="container">
+                            <div class="f1a "> 
+                                <input
+                                      class="form-check-input rounded-circle "
+                                      type="checkbox"
+                                      value=""
+                                      id="flexCheckDefault"
+                                      />                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+
+            <div class="my-2">
+                <div class="d-flex justify-content-between display-block display-block">
+                    <div class="col-md-6">
+                        <div class="container">
+                            <p class="my-2">Video Server Region</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="container">
+                            <div class="f1a "> 
+                                <select name="format" id="format" class="bg-gray" style="max-width: 310px;">
+                                    <option selected="" disabled="">Global Low Latency - gll</option>
+                                    <option value="">1 Contacts</option>
+                                    <option value="">2 Contacts</option>
+                                    <option value="">3 Contacts</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="d-flex justify-content-between display-block display-block">
+                    <div class="">
+                        <div class="container">
+                            <p class="my-2">Are parents shown a 'Your Profile' page?</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="container">
+                            <div class="f1a "> 
+                                <input
+                                      class="form-check-input rounded-circle "
+                                      type="checkbox"
+                                      value=""
+                                      id="flexCheckDefault"
+                                      />                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="d-flex justify-content-between display-block display-block">
+                    <div class="">
+                        <div class="container">
+                            <p class="my-2">Are parents allowed to request a translator?</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="container">
+                            <div class="f1a "> 
+                                <input
+                                      class="form-check-input rounded-circle "
+                                      type="checkbox"
+                                      value=""
+                                      id="flexCheckDefault"
+                                      />                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="d-flex justify-content-between display-block display-block">
+                    <div class=" ">
+                        <div class="container">
+                            <p class="my-2">User Profile Page Text</p>
+                        </div>
+                    </div>
+                    <div class=" ">
+                        <div class="container">
+                            <div class="f1a "> 
+                                <div class="c1e w-100 di" style="    padding: 10px 43px;">Select and Delete ‘Leavers</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="d-flex justify-content-between display-block">
+                    <div class="">
+                        <div class="container">
+                            <p class="my-2 " >Public - Login Page</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="container">
+                            <div class="f1a "> 
+                                <div class="c1e " style="    padding: 10px 41px;">Change Public - Login Page</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="d-flex justify-content-between display-block">
+                    <div class=" ">
+                        <div class="container">
+                            <p class="my-2">Public - List Evenings Page</p>
+                        </div>
+                    </div>
+                    <div class=" ">
+                        <div class="container">
+                            <div class="f1a "> 
+                                <div class="c1e" style="    padding: 10px 20px;">Change Public - List Evenings Page</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="d-flex justify-content-between display-block">
+                    <div class=" ">
+                        <div class="container">
+                            <p class="my-2">Public - Parent Booking Page</p>
+                        </div>
+                    </div>
+                    <div class=" ">
+                        <div class="container">
+                            <div class="f1a "> 
+                                <div class="c1e ">Change Public - Parent Booking Page</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="d-flex justify-content-between display-block">
+                    <div class=" ">
+                        <div class="container">
+                            <p class="my-2">Public - Text Common to Pages</p>
+                        </div>
+                    </div>
+                    <div class=" ">
+                        <div class="container">
+                            <div class="f1a "> 
+                                <div class="c1e " style="    padding: 10px 43px;">Select and Delete ‘Leavers</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="container">
+                    <div class="uline"></div>
+                </div>
+            </div>
+            <div class="my-2">
+                <div class="d-flex justify-content-between display-block">
+                    <div class=" ">
+                        <div class="container">
+                            <p class="my-2">Print Parent Appointments</p>
+                        </div>
+                    </div>
+                    <div class=" ">
+                        <div class="container">
+                            <div class="f1a "> 
+                                <div class="c1e" style="    padding: 10px 20px;">Change Print Parent Appointments</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-5">
+                <div class="text-center">
+                    <div class="c1e d-inline-block w-25">Save</div>
+                </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-xxl-4 col-xl-4 col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+            <div>
+                <div class="row display-block">
+                  <div class="col-md-6 pad-0">
+                    <div class="c1e">
+                      <img src="images/Asset 10mdpi.png" class="ics1"> Book
+                      Live Training
+                    </div>
+                  </div>
+                  <div class="col-md-6 pad-0">
+                    <div class="c1e help">
+                     <div class="pe-3"> <img src="images/Asset 8mdpi.png" class="ics1 mar-0"> <span class="fs-16">Help</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          <div class="c2 mt-3" id="c">
+            <div class="iconntitle container">
+              <div class="icf">
+                <div class="ic1"><img src="images/Control.svg" class="nicon setting-icon-img"></div>
+                <div class="ic2">
+                  <div class="ic2f1 fw-bold my-2">Control panel</div>
+                  <div class="ic2f2"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container">
+                <div class="my-3">
+                    <p class="fs-5 mx-2">Software Preferences</p>
+                </div>
+                <div class="">
+                    <p class="fs-16 mx-2">This section of Set Up School allows you to 
+                        change settings and/or the text that is seen 
+                        on the public side of the application.</p>
+                </div>
+                <div class="my-3">
+                    <div class="mx-2">
+                        <div class="c1e d-inline-block w-75">Save</div>
+                    </div>
+                </div>
+            </div>
+				  
+				   
+           </div>
+				  
+          </div>
+            </div>
+			
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <div class="footer">
+	<p>Copyright © Netmedia Ltd 2009-2023. All rights reserved. | Terms | Privacy Notice. </p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+</body>
+
+
+</html>

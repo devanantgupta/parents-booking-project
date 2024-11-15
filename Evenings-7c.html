@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Evenings 7c</title>
+  </head>
+
+  <body>
+    <!-- Submit Pop Up-->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" style="border-bottom: 0">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button
+              type="button"
+              class="btn-close cross"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <div class="iconntitle">
+                <div class="icf">
+                  <div class="ic1">
+                    <img src="images/Asset 14mdpi.png" class="nicon" />
+                  </div>
+                  <div class="ic2">
+                    <div class="ic2f1">
+                      Review / Confirm Teacher Assignments
+                    </div>
+                    <div class="ic2f2"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="my-3">
+                <span class="small-font margin-lr fs-16 my-3"
+                  >Select Applicable Evenings</span
+                >
+              </div>
+
+              <br />
+
+              <div class="margin-lr">
+                <table class="table">
+                  <thead class="table-secondary">
+                    <tr>
+                      <th></th>
+                      <th>Name of Group</th>
+                      <th>Parents’ Evening</th>
+                      <th>Date</th>
+                      <th>Start</th>
+                      <th>End</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <input
+                          type="radio"
+                          class="table-secondary input-radio"
+                          name="subject"
+                        />
+                      </td>
+                      <td>Autumn Term</td>
+                      <td>S5 / 6 Evening</td>
+                      <td>5th Nov 2021</td>
+                      <td>16:00</td>
+                      <td>19:00</td>
+                    </tr>
+                    <tr class="table-secondary">
+                      <td>
+                        <input
+                          type="radio"
+                          class="table-secondary input-radio"
+                          name="subject"
+                        />
+                      </td>
+                      <td>Autumn Term</td>
+                      <td>Example Parents’ Evening</td>
+                      <td>5th Nov 2021</td>
+                      <td>16:00</td>
+                      <td>19:00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="my-3">
+                <div class="margin-lr">
+                  <div class="uline"></div>
+                </div>
+              </div>
+
+              <div class="margin-lr">
+                <table class="table my-3">
+                  <thead class="table-secondary">
+                    <tr>
+                      <th></th>
+                      <th>Name of Group</th>
+                      <th>Parents’ Evening</th>
+                      <th>Date</th>
+                      <th>Start</th>
+                      <th>End</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="remove-border">
+                      <td>
+                        <input
+                          type="radio"
+                          class="table-secondary input-radio"
+                          name="subject"
+                        />
+                      </td>
+                      <td>Miss Care</td>
+                      <td>Business Management</td>
+                      <td>Business Subjects</td>
+                      <td>Update Children</td>
+                      <td>5th Nov 2021 17:32</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="my-3">
+                <div class="margin-lr">
+                  <div class="uline"></div>
+                </div>
+              </div>
+
+              <div class="margin-lr">
+                <div class="d-flex">
+                  <div class="c1e px-5" data-bs-dismiss="modal">
+                    Apply Changes
+                  </div>
+                  <div class="c1e px-5 mx-3" data-bs-dismiss="modal">
+                    Ignore Changes
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="" id="header">
+      <div class="a">
+        <div class="d">
+          <div class="d2">
+            <img src="images/Asset 1@33.33x.png" class="ico" />Parents Booking
+          </div>
+        </div>
+        <div class="list-h">
+          <ul>
+            <li class="nav-menu">
+              <a href="index.html" class="text-light text-decoration-none"
+                >Dashboard</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="set-up-school.html"
+                class="text-light text-decoration-none"
+                >Set-up school</a
+              >
+            </li>
+
+            <li class="nav-menu">
+              <a
+                href="Upload-Data-4.html"
+                class="text-light text-decoration-none"
+                >Upload data</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="Parent-Page-5.html"
+                class="text-light text-decoration-none"
+                >Parents</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="Teacher-Page-6.html"
+                class="text-light text-decoration-none"
+                >Teachers</a
+              >
+            </li>
+            <li class="nav-menu active">
+              <a href="Evenings-7c.html" class="text-light text-decoration-none"
+                >Evenings</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a href="Events-8c.html" class="text-light text-decoration-none"
+                >Events and Clubs</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="Dashboard-12d.html"
+                class="text-light text-decoration-none"
+                >Manage bookings</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a href="#" class="text-light text-decoration-none">Reports</a>
+            </li>
+            <li class="nav-menu">
+              <a href="#" class="text-light text-decoration-none"
+                >View contact</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a href="#" class="text-light text-decoration-none">Support</a>
+            </li>
+            <li class="nav-menu">
+              <a href="#" class="text-light text-decoration-none">Training</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="atx">
+        <div class="exp">
+          <div class="btn-a" onclick="toggle()">
+            <div class="mob-btn">
+              <div class="dashdiv"></div>
+              <div class="dashdiv"></div>
+              <div class="dashdiv"></div>
+            </div>
+          </div>
+        </div>
+        <div class="b-c-hdiv">
+          <div id="hedr" class="d-flex justify-content-between">
+            <div class="sn">
+              <div class="snimg">
+                <img src="images/Asset 2mdpi.png" class="schoolicon" />
+              </div>
+              <div class="sntxt">
+                <div class="scnholder">School Name</div>
+                <div class="admnnameholder">Admin name</div>
+              </div>
+            </div>
+
+            <div class="ln-lt">
+              <div class="d-flex my-1 hiddd">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  class="bi bi-power"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M7.5 1v7h1V1z" />
+                  <path
+                    d="M3 8.812a5 5 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812"
+                  />
+                </svg>
+                &nbsp;
+
+                <div>Back to Superadmin</div>
+                &nbsp;&nbsp;&nbsp;
+              </div>
+              <img src="images/Asset 6mdpi.png" class="lanicon" />
+              <div class="lan">Language</div>
+              <div class="sep"></div>
+              <div class="lout">Logout</div>
+              <img src="images/Asset 7mdpi.png" class="louticon" />
+            </div>
+          </div>
+
+          <div class="divline"></div>
+        </div>
+
+        <div id="bch" class="row">
+          <div class="" id="b">
+            <div class="sdiv d-inline-block">
+              <a href="index.html" class="text-dark text-decoration-none"
+                >School Name</a
+              >
+              / Evenings / <span class="fw-bold">Parents’ Evening Groups</span>
+            </div>
+
+            <div class="c1 d-inline-block float-end mx-3">
+              <div class="c1e px-4 my-2">
+                <img src="images/Asset 8mdpi.png" class="ics1" /> Help
+              </div>
+            </div>
+            <div class="b1">
+              <div class="iconntitle">
+                <div class="icf">
+                  <div class="ic1">
+                    <img src="images/Student-Selection.svg" class="nicon" />
+                  </div>
+                  <div class="ic2">
+                    <div class="ic2f1 fw-bold my-2">
+                      Create parents’ evening
+                    </div>
+                    <div class="ic2f2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="margin-lr">
+                <div class="my-2">
+                  <p>
+                    Let’s set up your next parents’ evening. Please complete all
+                    fields that have a red asterisk.
+                  </p>
+                </div>
+                <div>
+                  <p class="fs-16 mar-0 fw-bold">
+                    We recommend uploading fresh “data” before setting up your
+                    parents’ evening, if you have not done so already.
+                  </p>
+                </div>
+
+                <div class="my-3">
+                  <div class="uline"></div>
+                </div>
+
+                <div>
+                  <div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <label><strong>Parents’ evening name *</strong> </label>
+                        <input type="text" class="bg-gray w-100 py-2" />
+                      </div>
+                      <div class="col-md-4">
+                        <label><strong>Date *</strong> </label>
+                        <input type="text" class="bg-gray w-100 py-2" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="my-4">
+                    <div>
+                      <div class="row">
+                        <div class="col-md-2">
+                          <label
+                            ><strong>First appointment start time *</strong>
+                          </label>
+                          <div class="f1a">
+                            <select
+                              name="format"
+                              id="format"
+                              class="bg-gray w-100"
+                              style="min-width: 150px; max-width: 386px"
+                            >
+                              <option selected="" disabled="">07:00</option>
+                              <option value="">1 Contacts</option>
+                              <option value="">2 Contacts</option>
+                              <option value="">3 Contacts</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <label
+                            ><strong>Last appointment ends at *</strong>
+                          </label>
+                          <div class="f1a">
+                            <select
+                              name="format"
+                              id="format"
+                              class="bg-gray w-100"
+                              style="min-width: 150px; max-width: 386px"
+                            >
+                              <option selected="" disabled="">07:00</option>
+                              <option value="">1 Contacts</option>
+                              <option value="">2 Contacts</option>
+                              <option value="">3 Contacts</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <label
+                            ><strong>Length of appointment *</strong>
+                          </label>
+                          <div class="f1a">
+                            <select
+                              name="format"
+                              id="format"
+                              class="bg-gray w-100"
+                              style="min-width: 150px; max-width: 386px"
+                            >
+                              <option selected="" disabled="">
+                                10 minutes
+                              </option>
+                              <option value="">1 Contacts</option>
+                              <option value="">2 Contacts</option>
+                              <option value="">3 Contacts</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <label class="my-2"
+                            ><strong>Buffer time</strong>
+                          </label>
+                          <div class="f1a my-2">
+                            <select
+                              name="format"
+                              id="format"
+                              class="bg-gray w-100"
+                              style="min-width: 150px; max-width: 386px"
+                            >
+                              <option selected="" disabled="">0 minutes</option>
+                              <option value="">1 Contacts</option>
+                              <option value="">2 Contacts</option>
+                              <option value="">3 Contacts</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="my-4">
+                    <div>
+                      <div>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <p class="mar-0 fw-bold">
+                              How will the meetings be held?
+                            </p>
+                          </div>
+                          <div class="col-md-4">
+                            <p class="mar-0 fw-bold">What type of evening?</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-2">
+                          <div>
+                            <input
+                              class="form-check-input mar-3"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault1"
+                            />
+                            &nbsp;
+                            <span class="fs-16">In-person</span>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div>
+                            <input
+                              class="form-check-input mar-3"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault1"
+                            />
+                            &nbsp;
+                            <span class="fs-16">Video calls</span>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div>
+                            <input
+                              class="form-check-input mar-3"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault1"
+                            />
+                            &nbsp;
+                            <span class="fs-16">Parents’ evening</span>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div>
+                            <input
+                              class="form-check-input mar-3"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault1"
+                            />
+                            &nbsp;
+                            <span class="fs-16">Tutor evening</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="uline"></div>
+                  </div>
+
+                  <div class="my-4">
+                    <div>
+                      <div class="row">
+                        <div class="col-md-2">
+                          <label><strong>Booking opens on *</strong> </label>
+                          <input type="text" class="bg-gray w-100 py-2 my-2" />
+                        </div>
+                        <div class="col-md-2">
+                          <label><strong>Booking opens at *</strong> </label>
+                          <div class="f1a">
+                            <select
+                              name="format"
+                              id="format"
+                              class="bg-gray w-100"
+                              style="min-width: 150px; max-width: 386px"
+                            >
+                              <option selected="" disabled="">07:00</option>
+                              <option value="">1 Contacts</option>
+                              <option value="">2 Contacts</option>
+                              <option value="">3 Contacts</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <label><strong>Booking deadline *</strong> </label>
+                          <input type="text" class="bg-gray w-100 py-2 my-2" />
+                        </div>
+                        <div class="col-md-2">
+                          <label class=""
+                            ><strong>Deadline time *</strong>
+                          </label>
+                          <div class="f1a my-1">
+                            <select
+                              name="format"
+                              id="format"
+                              class="bg-gray w-100"
+                              style="min-width: 150px; max-width: 386px"
+                            >
+                              <option selected="" disabled="">0 minutes</option>
+                              <option value="">1 Contacts</option>
+                              <option value="">2 Contacts</option>
+                              <option value="">3 Contacts</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-4">
+                    <div class="uline"></div>
+                  </div>
+                  <div>
+                    <div>
+                      <div>
+                        <input
+                          class="form-check-input mar-3"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault1"
+                        />
+                        &nbsp; Create a comfort break for this session?
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-4">
+                    <div class="uline"></div>
+                  </div>
+                  <div class="my-3">
+                    <div class="d-flex">
+                      <div class="c1e">Add another date to the event</div>
+                    </div>
+                  </div>
+                  <div class="my-4">
+                    <div class="uline"></div>
+                  </div>
+                  <div>
+                    <div>
+                      <p>Personalise your parents’ evening.</p>
+                    </div>
+                    <div>
+                      <p class="fs-16 mar-0">
+                        <strong class="fs-16"
+                          >Allow consecutive bookings?</strong
+                        >
+                        (When set to “No”, parents will have to leave a gap
+                        between their appointments.)
+                      </p>
+                      <div class="col-md-2">
+                        <div class="f1a my-1">
+                          <select
+                            name="format"
+                            id="format"
+                            class="bg-gray w-100"
+                            style="min-width: 150px; max-width: 386px"
+                          >
+                            <option selected="" disabled="">Yes</option>
+                            <option value="">1 Contacts</option>
+                            <option value="">2 Contacts</option>
+                            <option value="">3 Contacts</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="my-4">
+                    <div>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <label
+                            >Will there be a booking limit for parents?
+                          </label>
+                          <select
+                            name="format"
+                            id="format"
+                            class="bg-gray w-100"
+                            style="min-width: 150px; max-width: 386px"
+                          >
+                            <option selected="" disabled="">Yes</option>
+                            <option value="">1 Contacts</option>
+                            <option value="">2 Contacts</option>
+                            <option value="">3 Contacts</option>
+                          </select>
+                        </div>
+                        <div class="col-md-6">
+                          <label>Only let one parent make appointments? </label>
+                          <select
+                            name="format"
+                            id="format"
+                            class="bg-gray w-100"
+                            style="min-width: 150px; max-width: 386px"
+                          >
+                            <option selected="" disabled="">No</option>
+                            <option value="">1 Contacts</option>
+                            <option value="">2 Contacts</option>
+                            <option value="">3 Contacts</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-4">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div>
+                          <input
+                            class="form-check-input mar-3"
+                            type="radio"
+                            name="flexRadioDefault"
+                            id="flexRadioDefault1"
+                          />
+                          &nbsp;
+                          <span class="fs-16 fw-bold"
+                            >Allow staff to create breaks or block out some
+                            appointments in their schedule?</span
+                          >
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div>
+                          <input
+                            class="form-check-input mar-3 fs-16"
+                            type="radio"
+                            name="flexRadioDefault"
+                            id="flexRadioDefault1"
+                          />
+                          &nbsp;<span class="fs-16 fw-bold"
+                            >Allow staff to extend their schedule?</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-4">
+                    <div>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <label
+                            ><strong
+                              >Can parents book the same teacher for 2+ subjects
+                            </strong>
+                            (i.e. French and Spanish)?
+                          </label>
+                          <select
+                            name="format"
+                            id="format"
+                            class="bg-gray w-100"
+                            style="min-width: 150px; max-width: 386px"
+                          >
+                            <option selected="" disabled="">Yes</option>
+                            <option value="">1 Contacts</option>
+                            <option value="">2 Contacts</option>
+                            <option value="">3 Contacts</option>
+                          </select>
+                        </div>
+                        <div class="col-md-6">
+                          <label
+                            ><strong
+                              >Do some teachers need a different appointment
+                              length?
+                            </strong>
+                            (If “Yes”, set these appointment lengths on “Edit
+                            the teachers” page.)
+                          </label>
+                          <select
+                            name="format"
+                            id="format"
+                            class="bg-gray w-100"
+                            style="min-width: 150px; max-width: 386px"
+                          >
+                            <option selected="" disabled="">No</option>
+                            <option value="">1 Contacts</option>
+                            <option value="">2 Contacts</option>
+                            <option value="">3 Contacts</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-3">
+                    <div class="uline"></div>
+                  </div>
+                  <div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="my-3">
+                          <p>Add students to evening by Reg Class:</p>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div>
+                                <input
+                                  type="text"
+                                  class="bg-gray w-100 py-2 my-2"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div>
+                                <div class="my-3">
+                                  <input
+                                    class="form-check-input mar-3"
+                                    type="radio"
+                                    name="flexRadioDefault"
+                                    id="flexRadioDefault1"
+                                  />
+                                  &nbsp; <span class="fw-bold">Select all</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <div
+                        class=""
+                        style="background-color: #ededed !important"
+                      >
+                        <div class="row">
+                          <div class="my-3 col-md-4">
+                            <div class="container">
+                              <input
+                                class="form-check-input mar-3"
+                                type="radio"
+                                name="flexRadioDefault"
+                                id="flexRadioDefault1"
+                              />
+                              &nbsp; <span class="fw-bold">S5</span> <br />
+                              <span class="mx-4">Students: 10</span>
+                            </div>
+                          </div>
+                          <div class="my-3 col-md-4">
+                            <div class="container">
+                              <input
+                                class="form-check-input mar-3"
+                                type="radio"
+                                name="flexRadioDefault"
+                                id="flexRadioDefault1"
+                              />
+                              &nbsp; <span class="fw-bold">S6</span> <br />
+                              <span class="mx-4">Students: 10</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-5">
+                    <div class="uline"></div>
+                  </div>
+                  <div>
+                    <div>
+                      <input
+                        class="form-check-input mar-3"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault1"
+                      />
+                      &nbsp;
+                      <span class="fw-bold"
+                        >Do you want to add a message to the parents’ email or
+                        print confirmations?</span
+                      >
+                    </div>
+                  </div>
+                  <div class="my-5">
+                    <div class="uline"></div>
+                  </div>
+                  <div class="my-3">
+                    <div class="d-flex">
+                      <div class="c1e">
+                        <a
+                          href="Evenings-7b.html"
+                          class="text-light text-decoration-none"
+                        >
+                          Save parents’ evening</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        Copyright © Netmedia Ltd 2009-2023. All rights reserved. | Terms |
+        Privacy Notice.
+      </p>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

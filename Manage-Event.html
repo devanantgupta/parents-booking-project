@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+   <title>Admin</title>
+</head>
+
+
+<body>
+
+    <div
+    class="modal fade my-5 "
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+    style="margin: 130px 0px !important;"
+  >
+    <div class="modal-dialog " style="    max-width: 850px !important;">
+      <div class="modal-content ">
+        <div class="text-end" style="border-bottom: 0">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button
+            type="button"
+            class="btn-close cross"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body pad-0 mb-5">
+          <div class="mx-3">
+            <div>
+              <div class="iconntitle">
+                <div class="icf">
+                <div class="ic1"><img src="images/Calender.svg" class="nicon"></div>
+                <div class="ic2">
+                  <div class="ic2f1 fs-5">Admin Reports.....</div>
+                  <div class="ic2f2 title-line"></div>
+                </div>
+                </div>
+              </div>					 
+            </div>
+            <div class="my-2 margin-lr">
+              <div class="my-2">
+                <div>
+                    <div>
+                      <table class="table table-striped">
+                        <thead>
+                          <tr class="table-secondary">
+                            <th scope="col">First Name</th>
+                            <th scope="col"></th>
+                            <th scope="col">Heading1</th>
+                            <th scope="col">Heading2</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Reports 1</th>
+                            <td></td>
+                            <td>Subjects</td>
+                            <td>Subjects</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Reports 1</th>
+                            <td></td>
+                            <td>Subjects</td>
+                            <td>Subjects</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            
+          
+           
+          </div>
+  
+       
+  
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <!-- Submit Pop Up-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="text-end" style="border-bottom: 0">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="btn-close cross" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body mb-5">
+            <div >
+
+                <div class="iconntitle">
+                  <div class="icf">
+                    <div class="ic1"><img src="images/Student-Selection.svg" class="nicon"></div>
+                    <div class="ic2">
+                      <div class="ic2f1 fs-4">
+                        Student Selection </div>
+                      <div class="ic2f2" style="    min-width: 53vw;"></div>
+                    </div>
+                  </div>
+                </div>
+                 
+                 
+                <br>
+               
+              
+                 
+                  <div class="margin-lr pops">
+                    <div>
+                        <div class="my-3">
+                            <div class=" w-100">
+                                <select name="format" id="format" class="bg-gray w-100 fw-bold" style="">
+                                  <option selected="" disabled="" >
+                                    <p class="fw-bold">Select a Class</p>
+                                  </option>
+                                  <option value="">1 Contacts</option>
+                                  <option value="">2 Contacts</option>
+                                  <option value="">3 Contacts</option>
+                                </select>
+                              </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="my-3">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div>
+                                                <div class="border border-dark py-2 px-3 bg-gray">
+                                                  <input class="form-check-input rounded-circle " type="checkbox" value="" id="flexCheckDefault">
+                                                    &nbsp; Register Classes
+                                                  </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>
+                                                <div class="border border-dark py-2 px-3 bg-gray">
+                                                  <input class="form-check-input rounded-circle " type="checkbox" value="" id="flexCheckDefault">
+                                                    &nbsp; Class Codes
+                                                  </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>
+                                                <div class="border border-dark py-2 px-3 bg-gray">
+                                                  <input class="form-check-input rounded-circle " type="checkbox" value="" id="flexCheckDefault">
+                                                    &nbsp; Year Groups
+                                                  </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="">
+                                <div class="my-3 d-flex justify-content-between">
+                                      <div class="d-flex">
+                                        <div class=" my-4">Show</div>
+                                      <div class="">
+                                        <div class=" my-4 mx-2">
+                                            <!-- <select name="format" id="format" class="bg-gray w-75" style="">
+                                              <option selected="" disabled="">10</option>
+                                              <option value="">1 Contacts</option>
+                                              <option value="">2 Contacts</option>
+                                              <option value="">3 Contacts</option>
+                                            </select> -->
+                                            <select class="px-2 py-1 bg-gray fw-bold">
+                                              <option class="fw-bold">
+                                                10
+                                              </option>
+                                              <option>
+                                                20
+                                              </option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                      <div id="deselectAll " class=" my-4">entries</div>
+                                      </div>
+                                      <div>
+                                        <div class="form d-inline-block float-end position-relative my-3 text-end">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search position-absolute my-1 mx-2 my-2" viewBox="0 0 16 16">
+                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                                          </svg>
+                                          <input type="text" class="form-input px-5 rounded-pill fs-16 border border-dark" placeholder="Search ">
+                                          <span class="left-pan"><i class="fa fa-microphone"></i></span>
+                                        </div>
+                                      </div>
+                                    
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div>
+                                        <table class="table table-striped">
+                                            <thead class="table-secondary">
+                                              <tr>
+                                                <!-- <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th> </th>
+                                                <th></th> -->
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td>12/ENG/1</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>12/ENG/1</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>12/ENG/1</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>12/ENG/1</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>12/ENG/1</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>12/ENG/1</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                             
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div>
+                                        <table class="table table-striped">
+                                            <thead class="table-secondary">
+                                              <tr>
+                                                <!-- <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th> </th>
+                                                <th></th> -->
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td>12/ENG/1</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>12/ENG/1</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>12/ENG/1</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>12/ENG/1</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>12/ENG/1</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>12/ENG/1</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                             
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     
+                  </div>
+
+				  <div class="my-3">
+					<div class="margin-lr">
+						<div class="uline"></div>
+					</div>
+
+
+                    <div class="margin-lr">
+                        <div>
+                            <div class="">
+                                <div class="my-3">
+                                    
+                                      <!-- <strong id="selectAll">Select All | </strong> -->
+                                      <div class="d-inline-block my-4">Showing 1 to 10 of 18 entries</div>
+                                      <div class="form d-inline-block float-end position-relative my-4">
+                                        <div class="d-flex">
+                                            <div class="mx-2">
+                                                <p>Previous</p>
+                                            </div>
+                                            <div class="mx-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                                  </svg>
+                                            </div>
+                                            <div class="mx-2">
+                                                <p class="fw-bold">1</p>
+                                            </div>
+                                            <div class="mx-2">
+                                                <p >2</p>
+                                            </div>
+                                            <div class="mx-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                                  </svg>
+                                            </div>
+                                            <div class="mx-2">
+                                                <p>Next</p>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    
+                                  </div>
+                            </div>
+                        </div>
+
+                        <div class="my-3 pops">
+                            <div class=" w-100">
+                                <select name="format" id="format" class="bg-gray w-100 fw-bold" style="">
+                                  <option selected="" disabled="">Select a student</option>
+                                  <option value="">1 Contacts</option>
+                                  <option value="">2 Contacts</option>
+                                  <option value="">3 Contacts</option>
+                                </select>
+                              </div>
+                        </div>
+                    </div>
+					
+				 </div>
+
+                 
+				 
+                 <div class="margin-lr">
+                    <div class="row">
+                        <!-- <div class="c1e px-5 col-md-4" data-bs-dismiss="modal">
+                            
+                            Add Class
+                        
+                        </div>
+                        <div class="c1e px-5  col-md-4" data-bs-dismiss="modal">Add Student</div>
+                        <div class="c1e px-5  col-md-4" data-bs-dismiss="modal">Cancel</div> -->
+
+                        <div class="col-md-4">
+                            <div class="c1e">Add Class</div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="c1e">Add Student</div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="c1e">Cancel</div>
+                        </div>
+                    </div>
+                 </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+  <div class="" id="header">
+    <div class="a">
+      <div class="d">
+        <div class="d2"><img src="images/Asset 1@33.33x.png" class="ico">Parents Booking</div>
+      </div>
+      <div class="list-h">
+        <ul>
+          <li class="active nav-menu"><a href="index.html" class="text-light text-decoration-none ">Dashboard</a></li>
+          <li class="nav-menu " ><a href="set-up-school.html" class="text-light text-decoration-none ">Set-up school</a> </li>
+          <li class="nav-menu"><a href="Upload-Data-4.html" class="text-light text-decoration-none ">Upload data</a> </li>
+          <li class="nav-menu"><a href="Parent-Page-5.html" class="text-light text-decoration-none ">Parents</a> </li>
+          <li class="nav-menu"><a href="Teacher-Page-6.html" class="text-light text-decoration-none ">Teachers</a> </li>
+          <li class="nav-menu"><a href="Evenings-7c.html" class="text-light text-decoration-none ">Evenings</a> </li>
+          <li class="nav-menu"><a href="Events-8c.html" class="text-light text-decoration-none ">Events and Clubs</a> </li>
+          <li class="nav-menu"><a href="#" class="text-light text-decoration-none ">Manage bookings</a> </li>
+          <li class="nav-menu"><a href="#" class="text-light text-decoration-none ">Reports</a> </li>
+          <li class="nav-menu"><a href="#" class="text-light text-decoration-none ">View contact</a> </li>
+          <li class="nav-menu"><a href="#" class="text-light text-decoration-none ">Support</a> </li>
+          <li class="nav-menu"><a href="#" class="text-light text-decoration-none ">Training</a> </li>
+        </ul>
+      </div>
+
+    </div>
+
+
+    <div class="atx">
+      <div class="exp">
+        <div class="btn-a" onclick="toggle()">
+          <div class="mob-btn">
+            <div class="dashdiv"></div>
+            <div class="dashdiv"></div>
+            <div class="dashdiv"></div>
+          </div>
+        </div>
+      </div>
+      <div class="b-c-hdiv">
+        <div id="hedr" class="d-flex justify-content-between">
+          <div class="sn">
+            <div class="snimg"><img src="images/Asset 2mdpi.png" class="schoolicon"></div>
+            <div class="sntxt">
+              <div class="scnholder">School Name</div>
+              <div class="admnnameholder">Admin name</div>
+            </div>
+          </div>
+
+          <div class="ln-lt">
+            <img src="images/Asset 6mdpi.png" class="lanicon">
+            <div class="lan">Language</div>
+            <div class="sep"></div>
+            <div class="lout"> Logout</div><img src="images/Asset 7mdpi.png" class="louticon">
+          </div>
+
+        </div>
+
+
+
+
+
+        <div class="divline"></div>
+      </div>
+
+
+      <div id="bch" class="row">
+        <div class="col-xxl-7 col-xl-7 col-lg-12 col-md-12 col-sm-12 col-xs-12" id="b">
+          <div class="sdiv"><a href="#" class="text-dark text-decoration-none">School Name</a> / <a href="index.html" class="text-dark text-decoration-none">Dashboard</a> /<span class="fw-bold"> Add Breaks or Extend Teacher Schedules</span></div>
+          <div class="b1">
+
+            <div class="iconntitle">
+              <div class="icf">
+                <div class="ic1"><img src="images/Asset 14mdpi.png" class="nicon"></div>
+                <div class="ic2">
+                  <div class="ic2f1">Add Breaks or Extend Teacher Schedules</div>
+                  <div class="ic2f2"></div>
+                </div>
+              </div>
+            </div>
+             <span class="small-font">Example Parents’ Evening - 17th Nov 2021</span>
+		     <span>Autumn Term: Example Parents’ Evening</span>
+            <br>
+           
+           <hr>
+		        <span>
+				 <strong id="selectAll">Select All | </strong> 
+				 <span id="deselectAll">Deselect All</span>
+				</span>
+			 
+			  <div>
+				 <table class="table">
+					<thead class="table-secondary">
+					  <tr>
+						<th></th>
+						<th>Teacher Name</th>
+						<th>Subject</th>
+						<th>Interval</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+						<td>
+							<input
+                          class="form-check-input rounded-circle"
+                          type="checkbox"
+                          value=""
+                          id="flexcheckdefault"
+                        />
+						 </td>
+						<td>Miss Care</td>
+						<td>Business Management</td>
+						<td>5</td>
+					  </tr>
+					 <tr>
+						<td>
+							<input
+                          class="form-check-input rounded-circle"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+						 </td>
+						<td>Miss Hall</td>
+						<td>Science </td>
+						<td>5</td>
+					  </tr>
+					  
+					  <tr>
+						<td>
+							<input
+                          class="form-check-input rounded-circle"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+						 </td>
+						<td>Miss Jones</td>
+						<td>English</td>
+						<td>5</td>
+					  </tr>
+					  <tr>
+						<td>
+							<input
+                          class="form-check-input rounded-circle"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+						 </td>
+						<td>Miss Neill</td>
+						<td>Geography</td>
+						<td>5</td>
+					  </tr>
+					  <tr>
+						<td>
+							<input
+                          class="form-check-input rounded-circle"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+						 </td>
+						<td>Miss Rosales</td>
+						<td>Spanish</td>
+						<td>5</td>
+					  </tr>
+					  <tr>
+						<td>
+							<input
+                          class="form-check-input rounded-circle"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+						 </td>
+						<td>Mr Boyer</td>
+						<td>French</td>
+						<td>5</td>
+					  </tr>
+					  <tr>
+						<td>
+							<input
+                          class="form-check-input rounded-circle"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+						 </td>
+						<td>Mr Forwood</td>
+						<td>PE</td>
+						<td>5</td>
+					  </tr>
+					  <tr>
+						<td>
+							<input
+                          class="form-check-input rounded-circle "
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+						 </td>
+						<td>Mr James-Wattling</td>
+						<td>Maths</td>
+						<td>5</td>
+					  </tr>
+					</tbody>
+				  </table>
+			  </div>
+          </div>
+          
+        </div>
+        <div class="col-xxl-5 col-xl-5 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="">
+            <!-- <div class="c1e"> <img src="images/Asset 10mdpi.png" class="ics1"> Book Live Training</div> -->
+            <div class="c1 d-inline-block float-end mx-3">
+              <div class="c1e px-4 my-2">
+                <img src="images/Asset 8mdpi.png" class="ics1"> Help
+              </div>
+            </div>
+          </div>
+          <div class="c2" id="c">
+            <div class="iconntitle">
+              <div class="icf">
+                <div class="ic1"><img src="images/Control.svg" class="nicon setting-icon-img"></div>
+                <div class="ic2">
+                  <div class="ic2f1">Control panel</div>
+                  <div class="ic2f2"></div>
+                </div>
+              </div>
+            </div>
+            <div class="f1 ms-3">
+              
+              <div class="row-col "> 
+			     <div class="select-col">
+					<label><strong>Extend start time to:</strong></label>
+					<select name="format" class="bg-secondary" id="format">
+					   <option>Select</option>
+					  <option value="">option1</option>
+					  <option value="">option2</option>
+					  <option value="">option3</option>
+					</select>
+				 </div>
+				 <div class="select-col">
+					<label><strong>Extend start time to::</strong></label>
+					<select name="format" id="format" class="bg-secondary">
+					  <option>Select</option>
+					  <option value="">option1</option>
+					  <option value="">option2</option>
+					  <option value="">option3</option>
+					</select>
+				 </div>
+				
+				</div>
+				 <div class="f1b"><div class="tsb-h"></div><button class="a-btn2">Extend</div></button></div>
+				 <hr>
+              <!-- <div class="f1a">Parents evening</div> -->
+                 <div class="ms-3">
+                  <div class="row-col"> 
+                    <div class="select-col">
+                   <label><strong>Extend start time to:</strong></label>
+                   <select name="format" class="bg-secondary" id="format">
+                      <option>Select</option>
+                     <option value="">option1</option>
+                     <option value="">option2</option>
+                     <option value="">option3</option>
+                   </select>
+                  </div>
+                  <div class="select-col">
+                   <label><strong>Extend start time to::</strong></label>
+                   <select name="format" id="format" class="bg-secondary">
+                     <option>Select</option>
+                     <option value="">option1</option>
+                     <option value="">option2</option>
+                     <option value="">option3</option>
+                   </select>
+                  </div>
+                 
+                 </div>
+                 </div>
+				  
+				 <div class="f1b ms-3">
+				    <div class="tsb-h">
+					      <br>
+						  <input type="radio" name="block">
+						  
+						  <label>Block</label>
+						  <br>
+						  <input type="radio" name="block">
+						   <label>Unblock</label>
+					   </div>
+					    <button class="a-btn2" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+				    </div>
+				   
+				  </div>
+				  
+				  </div>
+            </div>
+			
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <div class="footer">
+	<p>Copyright © Netmedia Ltd 2009-2023. All rights reserved. | Terms | Privacy Notice. </p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+  <script src="js/checkbox.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+</body>
+
+
+</html>

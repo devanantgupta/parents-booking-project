@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+   <title>Master List of Parents</title>
+</head>
+
+
+<body>
+
+  <!-- Submit Pop Up-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="max-width: 550px !important;">
+      <div class="modal-content alert-border">
+        <div class="modal-header" style="border-bottom: 0;">
+          <h5 class="modal-title" id="exampleModalLabel">
+            
+          </h5>
+          <button type="button" class="btn-close cross" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body " >
+           <div class="mx-2">
+            <div class="bg-danger  rounded">
+                <p class="my-2 text-light mx-3 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-diamond" viewBox="0 0 16 16">
+                        <path d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.48 1.48 0 0 1 0-2.098zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"/>
+                        <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+                      </svg>
+                    Warning</p>
+            </div>
+            <div class="my-2">
+                <p class="fw-bold">WARNING: Do not do this unless you are absolutely certain of the consequences.</p>
+            </div>
+            <div class="my-2">
+                <p class="fw-bold">Deleting parents will delete ALL existing bookings made by parents. If you have parents' evenings which are open or live then these bookings CANNOT be retrieved after the parents have been deleted.</p>
+            </div>
+            <div class="my-2">
+                <p class="">If you are unsure at all. contact Support for further information or for help/advice.</p>
+            </div>
+            <div class="my-2">
+                <p class="">N.B. We recommend you print a report of all bookings for open events before deleting all parents, just in case, if you must delete all parents, so that you have a backup.</p>
+            </div>
+           </div>
+
+           <div class="px-2 py-2 rounded" >
+            <div class="d-flex justify-content-between">
+                <div class="c1e px-3  rounded-pill" data-bs-dismiss="modal">Cancel</div>
+                <div class="c1e px-3 py  rounded-pill text-right" data-bs-dismiss="modal">Confirm Delete</div>
+            </div>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+  <div class="" id="header">
+    <div class="a">
+      <div class="d">
+        <div class="d2"><img src="images/Asset 1@33.33x.png" class="ico">Parents Booking</div>
+      </div>
+      <div class="list-h">
+        <ul>
+            <li class=" nav-menu"><a href="index.html" class="text-light text-decoration-none ">Dashboard</a></li>
+			<li class="nav-menu " ><a href="set-up-school.html" class="text-light text-decoration-none ">Set-up school</a> </li>
+            <li class="nav-menu"><a href="Upload-Data-4.html" class="text-light text-decoration-none ">Upload data</a> </li>
+            <li class="nav-menu active"><a href="Parent-Page-5.html" class="text-light text-decoration-none ">Parents</a> </li>
+            <li class="nav-menu"><a href="Teacher-Page-6.html" class="text-light text-decoration-none ">Teachers</a> </li>
+            <li class="nav-menu"><a href="Evenings-7c.html" class="text-light text-decoration-none ">Evenings</a> </li>
+            <li class="nav-menu"><a href="Events-8c.html" class="text-light text-decoration-none ">Events and Clubs</a> </li>
+            <li class="nav-menu"><a href="Dashboard-12d.html" class="text-light text-decoration-none ">Manage bookings</a> </li>
+            <li class="nav-menu"><a href="Reports-10a.html" class="text-light text-decoration-none ">Reports</a> </li>
+            <li class="nav-menu"><a href="#" class="text-light text-decoration-none ">View contact</a> </li>
+            <li class="nav-menu"><a href="#" class="text-light text-decoration-none ">Support</a> </li>
+            <li class="nav-menu"><a href="#" class="text-light text-decoration-none ">Training</a> </li>
+          </ul>
+      </div>
+
+    </div>
+
+
+    <div class="atx">
+      <div class="exp">
+        <div class="btn-a" onclick="toggle()">
+          <div class="mob-btn">
+            <div class="dashdiv"></div>
+            <div class="dashdiv"></div>
+            <div class="dashdiv"></div>
+          </div>
+        </div>
+      </div>
+      <div class="b-c-hdiv">
+        <div id="hedr" class="d-flex justify-content-between">
+          <div class="sn">
+            <div class="snimg"><img src="images/Asset 2mdpi.png" class="schoolicon"></div>
+            <div class="sntxt">
+              <div class="scnholder">School Name</div>
+              <div class="admnnameholder">Admin name</div>
+            </div>
+          </div>
+
+          <div class="ln-lt">
+            <img src="images/Asset 6mdpi.png" class="lanicon">
+            <div class="lan">Language</div>
+            <div class="sep"></div>
+            <div class="lout"> Logout</div><img src="images/Asset 7mdpi.png" class="louticon">
+          </div>
+
+        </div>
+
+
+
+
+
+        <div class="divline"></div>
+      </div>
+
+      <div class="b1 mx-3 my-3">
+        
+      <div id="bch" class="row">
+        <div class="d-flex justify-content-between">
+            <div>
+                <div class="iconntitle">
+                    <div class="icf">
+                      <div class="ic1"><img src="images/UploadDate-list.svg" class="nicon"></div>
+                      <div class="ic2">
+                        <div class="ic2f1 ">Edit Parent & Child data</div>
+                        
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="my-2">
+                <p class="c1e px-5">Save</p>
+            </div>
+        </div>
+        <div class="ic2f2"></div>
+        </div>
+
+        <div id="bch">
+            <div class=" px-4 py-4">
+                <div >
+                    <p>Parent details</p>
+                    <div class="ic2f2"></div>
+                </div>
+                <div class="my-3">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label class="d-block fw-bold">Title</label>
+                            <input type="text" class="w-100 py-2">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="d-block fw-bold">First name</label>
+                            <input type="text" class="w-100 py-2">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="d-block fw-bold">Surname</label>
+                            <input type="text" class="w-100 py-2">
+                        </div>
+                    </div>
+                </div>
+                <div class="my-3">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <label class="d-block fw-bold">Email</label>
+                            <input type="text" class="w-100 py-2">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="d-block fw-bold">Telephone</label>
+                            <input type="text" class="w-100 py-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+        
+      </div>
+
+      <div class="b1 mx-3 my-3">
+        <div class=" px-4 py-4 my-3">
+          <div>
+              <div class="text-center">
+                  <p>Add a new child</p>
+              </div>
+              <div class="d-flex justify-content-center"> 
+                  <div>
+                      <p class="c1e">Add a existing child</p>
+                  </div>
+                  <div>
+                      <p class="c1e">Add new child</p>
+                  </div>
+              </div>
+          </div>
+  
+      </div>
+      </div>
+
+      <div class="b1 mx-3 my-3">
+        <div class=" px-4 py-4 my-4">
+          <div >
+              <p>Linked Children</p>
+              <div class="ic2f2"></div>
+          </div>
+          <div class="my-3">
+              <div class="row">
+                  <div class="col-md-2">
+                      <label class="d-block fw-bold">First Name</label>
+                      <input type="text" class="w-100 py-2">
+                  </div>
+                  <div class="col-md-2">
+                      <label class="d-block fw-bold">Surname</label>
+                      <input type="text" class="w-100 py-2">
+                  </div>
+                  <div class="col-md-2">
+                      <label class="d-block fw-bold">DOB (dd/MM/yyyy)</label>
+                      <input type="text" class="w-100 py-2">
+                  </div>
+
+                  <div class="col-md-2">
+                      <label class="d-block fw-bold">Class</label>
+                      <input type="text" class="w-100 py-2">
+                  </div>
+                  <div class="col-md-2">
+                      <label class="d-block fw-bold">Year Group</label>
+                      <input type="text" class="w-100 py-2">
+                  </div>
+                  <div class="col-md-2 justify-content-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x-circle-fill my-4 mx-3" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
+                        </svg>
+                  </div>
+              </div>
+          </div>
+          <div class="my-3">
+              <div class="row">
+                  <div class="col-md-2">
+                      <label class="d-block fw-bold">First Name</label>
+                      <input type="text" class="w-100 py-2">
+                  </div>
+                  <div class="col-md-2">
+                      <label class="d-block fw-bold">Surname</label>
+                      <input type="text" class="w-100 py-2">
+                  </div>
+                  <div class="col-md-2">
+                      <label class="d-block fw-bold">DOB (dd/MM/yyyy)</label>
+                      <input type="text" class="w-100 py-2">
+                  </div>
+
+                  <div class="col-md-2">
+                      <label class="d-block fw-bold">Class</label>
+                      <input type="text" class="w-100 py-2">
+                  </div>
+                  <div class="col-md-2">
+                      <label class="d-block fw-bold">Year Group</label>
+                      <input type="text" class="w-100 py-2">
+                  </div>
+                  <div class="col-md-2 justify-content-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x-circle-fill my-4 mx-3" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
+                        </svg>
+                  </div>
+              </div>
+          </div>
+          <div>
+              <div >
+                  <p class="c1e w-25">Save</p>
+              </div>
+          </div>
+      </div>
+      </div>
+			
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <div class="footer">
+	<p>Copyright © Netmedia Ltd 2009-2023. All rights reserved. | Terms | Privacy Notice. </p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+</body>
+
+
+</html>

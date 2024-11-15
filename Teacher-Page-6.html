@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Teacher-Page-6</title>
+  </head>
+
+  <body>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+      style="margin: 130px 0px !important"
+    >
+      <div class="modal-dialog" style="max-width: 760px !important">
+        <div class="modal-content">
+          <div class="text-end" style="border-bottom: 0">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button
+              type="button"
+              class="btn-close cross"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body pad-0 mb-5 mt-3">
+            <div class="mx-3">
+              <div>
+                <div class="iconntitle">
+                  <div class="icf">
+                    <div class="ic1">
+                      <img src="images/Teacher-Student.svg" class="nicon" />
+                    </div>
+                    <div class="ic2">
+                      <div class="ic2f1">Add Subject to Teacher</div>
+                      <div class="ic2f2" style="min-width: 37vw"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="margin-lr">
+                <div class="my-2">
+                  <label class="d-block">Subject* </label>
+                  <input type="text" class="w-100 py-1" />
+                </div>
+                <div class="my-4">
+                  <label class="d-block">Department* </label>
+                  <input type="text" class="w-100 py-1" />
+                </div>
+              </div>
+              <div class="margin-lr">
+                <div class="d-flex mt-3">
+                  <div class="c1e px-5" data-bs-dismiss="modal">Submit</div>
+                  &nbsp;
+                  <div class="c1e px-5" data-bs-dismiss="modal">Cancel</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Submit Pop Up-->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" style="max-width: 550px !important">
+        <div class="modal-content">
+          <div class="text-end" style="border-bottom: 0">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button
+              type="button"
+              class="btn-close cross"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body pad-0">
+            <div class="mx-2">
+              <div>
+                <div class="iconntitle">
+                  <div class="icf">
+                    <div class="ic1">
+                      <img src="images/Calender.svg" class="nicon" />
+                    </div>
+                    <div class="ic2">
+                      <div class="ic2f1">Add Subject to Teacher</div>
+                      <div class="ic2f2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="my-2">
+                <label class="d-block">Subject* </label>
+                <input type="text" class="w-100 py-1" />
+              </div>
+              <div class="my-2">
+                <label class="d-block">Department* </label>
+                <input type="text" class="w-100 py-1" />
+              </div>
+            </div>
+
+            <div class="px-2 py-2 rounded">
+              <div class="d-flex justify-content-between">
+                <div class="c1e px-3" data-bs-dismiss="modal">Submit</div>
+                <div class="c1e px-3 py text-right" data-bs-dismiss="modal">
+                  Cancel
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+      style="margin: 130px 0px"
+    >
+      <div class="modal-dialog" style="max-width: 385px !important">
+        <div class="modal-content">
+          <div class="text-end" style="border-bottom: 0">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button
+              type="button"
+              class="btn-close cross"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body pad-0 mb-3 mx-3">
+            <div class="mx-2">
+              <!-- <div class="bg-info rounded">
+                <p class="my-2 text-light mx-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-exclamation-diamond"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.48 1.48 0 0 1 0-2.098zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"
+                    ></path>
+                    <path
+                      d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"
+                    ></path>
+                  </svg>
+                  Password Reset
+                </p>
+              </div> -->
+              <div class="text-center"></div>
+              <div class="my-2">
+                <div
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  "
+                >
+                  <img src="images/Password Reset.svg" class="nicon" />
+                </div>
+
+                <p class="fs-5 mar-0 text-center fw-bold">Password Reset</p>
+                <p class="mar-0 fs-16 text-center">
+                  Password reset Email has been sent successfully!
+                </p>
+              </div>
+            </div>
+
+            <div class="px-2 py-2 rounded d-flex justify-content-center">
+              <div class="d-flex justify-content-between text-center">
+                <div class="c1e px-5" data-bs-dismiss="modal">Close</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="" id="header">
+      <div class="a">
+        <div class="d">
+          <div class="d2">
+            <img src="images/Asset 1@33.33x.png" class="ico" />Parents Booking
+          </div>
+        </div>
+        <div class="list-h">
+          <ul>
+            <li class="nav-menu">
+              <a href="index.html" class="text-light text-decoration-none"
+                >Dashboard</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="set-up-school.html"
+                class="text-light text-decoration-none"
+                >Set-up school</a
+              >
+            </li>
+
+            <li class="nav-menu">
+              <a
+                href="Upload-Data-4.html"
+                class="text-light text-decoration-none"
+                >Upload data</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="Parent-Page-5.html"
+                class="text-light text-decoration-none"
+                >Parents</a
+              >
+            </li>
+            <li class="nav-menu active">
+              <a
+                href="Teacher-Page-6.html"
+                class="text-light text-decoration-none"
+                >Teachers</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a href="Evenings-7c.html" class="text-light text-decoration-none"
+                >Evenings</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a href="Events-8c.html" class="text-light text-decoration-none"
+                >Events and Clubs</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="Dashboard-12d.html"
+                class="text-light text-decoration-none"
+                >Manage bookings</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a href="Reports-10a.html" class="text-light text-decoration-none"
+                >Reports</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a href="#" class="text-light text-decoration-none"
+                >View contact</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a href="#" class="text-light text-decoration-none">Support</a>
+            </li>
+            <li class="nav-menu">
+              <a href="#" class="text-light text-decoration-none">Training</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="atx">
+        <div class="exp">
+          <div class="btn-a" onclick="toggle()">
+            <div class="mob-btn">
+              <div class="dashdiv"></div>
+              <div class="dashdiv"></div>
+              <div class="dashdiv"></div>
+            </div>
+          </div>
+        </div>
+        <div class="b-c-hdiv">
+          <div id="hedr" class="d-flex justify-content-between">
+            <div class="sn">
+              <div class="snimg">
+                <img src="images/Asset 2mdpi.png" class="schoolicon" />
+              </div>
+              <div class="sntxt">
+                <div class="scnholder">School Name</div>
+                <div class="admnnameholder">Admin name</div>
+              </div>
+            </div>
+
+            <div class="ln-lt">
+              <div class="d-flex my-1 hiddd">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  class="bi bi-power"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M7.5 1v7h1V1z" />
+                  <path
+                    d="M3 8.812a5 5 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812"
+                  />
+                </svg>
+                &nbsp;
+
+                <div>Back to Superadmin</div>
+                &nbsp;&nbsp;&nbsp;
+              </div>
+              <img src="images/Asset 6mdpi.png" class="lanicon" />
+              <div class="lan">Language</div>
+              <div class="sep"></div>
+              <div class="lout">Logout</div>
+              <img src="images/Asset 7mdpi.png" class="louticon" />
+            </div>
+          </div>
+
+          <div class="divline"></div>
+        </div>
+
+        <div id="bch" class="row">
+          <div
+            class="col-xxl-8 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-xs-12"
+            id="b"
+          >
+            <div class="sdiv">
+              <a href="#" class="text-dark text-decoration-none">School Name</a>
+              /
+              <a
+                href="Teacher-Page-6.html"
+                class="text-dark text-decoration-none"
+                >Teachers</a
+              >
+              / <span class="fw-bold">Edit a teacher</span>
+            </div>
+            <div class="b1">
+              <div class="iconntitle">
+                <div class="icf">
+                  <div class="ic1">
+                    <img src="images/Edit teacher.svg" class="nicon" />
+                  </div>
+                  <div class="ic2">
+                    <div class="ic2f1">Edit a teacher</div>
+                    <div class="ic2f2 title-line"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="my-4 ms-4">Teacher subjects</div>
+
+              <div class="row mx-2">
+                <div class="col-md-6">
+                  <span class="small-font fw-bold ms-1">
+                    Teaching 4 subjects:</span
+                  >
+                  <span class="ms-1"
+                    >Business Management, English, Maths, French</span
+                  >
+                </div>
+                <div class="col-md-6" style="text-align: -webkit-right">
+                  <div>
+                    <div
+                      class="c1e w-65 float-right"
+                      type="file"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      Add a new subject to teacher
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="my-3 ms-4">
+                <div class="uline"></div>
+              </div>
+
+              <div class="my-3 mx-3">
+                <div class="ms-1">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="c1e px-5">Add student(s)</div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="c1e px-5">Print this list</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-2 ms-1">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="c1e px-5 bg-danger delete">
+                        Delete selected
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="c1e px-5 bg-danger delete">
+                        Delete all students
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="c1e px-5 bg-danger delete">
+                        Delete a class
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ms-4">
+                <div>
+                  <p>Students taught by teacher</p>
+                </div>
+                <div>
+                  <p class="fw-bold">Student count: 12</p>
+                </div>
+              </div>
+
+              <div class="mx-3">
+                <table class="table ms-1">
+                  <thead class="table-secondary">
+                    <tr>
+                      <th></th>
+                      <th>First name</th>
+                      <th>Last name</th>
+                      <th>DOB</th>
+                      <th>Class</th>
+                      <th>Class code</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <input
+                          class="form-check-input rounded-circle"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                      </td>
+                      <td>Leon</td>
+                      <td>Bennet</td>
+                      <td>10th May 1998</td>
+                      <td>S5</td>
+                      <td>12/BM2</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          class="form-check-input rounded-circle"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                      </td>
+                      <td>Leon</td>
+                      <td>Bennet</td>
+                      <td>10th May 1998</td>
+                      <td>S5</td>
+                      <td>12/BM2</td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <input
+                          class="form-check-input rounded-circle"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                      </td>
+                      <td>Leon</td>
+                      <td>Bennet</td>
+                      <td>10th May 1998</td>
+                      <td>S5</td>
+                      <td>12/BM2</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          class="form-check-input rounded-circle"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                      </td>
+                      <td>Leon</td>
+                      <td>Bennet</td>
+                      <td>10th May 1998</td>
+                      <td>S5</td>
+                      <td>12/BM2</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          class="form-check-input rounded-circle"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                      </td>
+                      <td>Leon</td>
+                      <td>Bennet</td>
+                      <td>10th May 1998</td>
+                      <td>S5</td>
+                      <td>12/BM2</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          class="form-check-input rounded-circle"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                      </td>
+                      <td>Leon</td>
+                      <td>Bennet</td>
+                      <td>10th May 1998</td>
+                      <td>S5</td>
+                      <td>12/BM2</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          class="form-check-input rounded-circle"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                      </td>
+                      <td>Leon</td>
+                      <td>Bennet</td>
+                      <td>10th May 1998</td>
+                      <td>S5</td>
+                      <td>12/BM2</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          class="form-check-input rounded-circle"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                      </td>
+                      <td>Leon</td>
+                      <td>Bennet</td>
+                      <td>10th May 1998</td>
+                      <td>S5</td>
+                      <td>12/BM2</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          class="form-check-input rounded-circle"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                      </td>
+                      <td>Leon</td>
+                      <td>Bennet</td>
+                      <td>10th May 1998</td>
+                      <td>S5</td>
+                      <td>12/BM2</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          class="form-check-input rounded-circle"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                      </td>
+                      <td>Leon</td>
+                      <td>Bennet</td>
+                      <td>10th May 1998</td>
+                      <td>S5</td>
+                      <td>12/BM2</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          class="form-check-input rounded-circle"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                      </td>
+                      <td>Leon</td>
+                      <td>Bennet</td>
+                      <td>10th May 1998</td>
+                      <td>S5</td>
+                      <td>12/BM2</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input
+                          class="form-check-input rounded-circle"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                      </td>
+                      <td>Leon</td>
+                      <td>Bennet</td>
+                      <td>10th May 1998</td>
+                      <td>S5</td>
+                      <td>12/BM2</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xxl-4 col-xl-4 col-lg-12 col-md-12 col-sm-12 col-xs-12"
+          >
+            <div class="">
+              <!-- <div class="c1e"> <img src="images/Asset 10mdpi.png" class="ics1"> Book Live Training</div> -->
+              <div>
+                <div class="row">
+                  <div class="col-md-6 pad-0">
+                    <div class="c1e">
+                      <img src="images/Asset 10mdpi.png" class="ics1" /> Book
+                      Live Training
+                    </div>
+                  </div>
+                  <div class="col-md-6 pad-0">
+                    <div class="c1e help">
+                      <div class="pe-3">
+                        <img src="images/Asset 8mdpi.png" class="ics1 mar-0" />
+                        <span class="fs-16">Help</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3" id="c">
+              <div class="c2">
+                <div class="iconntitle">
+                  <div class="icf">
+                    <div class="ic1">
+                      <img
+                        src="images/Edit teacher.svg"
+                        class="nicon setting-icon-img"
+                      />
+                    </div>
+                    <div class="ic2">
+                      <div class="ic2f1">Teacher Details</div>
+                      <div class="ic2f2" style="min-width: 18vw"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ms-3">
+                  <div class="my-2">
+                    <div class="mx-3">
+                      <label class="d-block my-2">Name</label>
+                      <input
+                        type="text"
+                        class="bg-gray w-100 py-2 d-block px-3"
+                      />
+                    </div>
+                  </div>
+                  <div class="my-2">
+                    <div class="mx-3">
+                      <label class="d-block my-2">Teacher email</label>
+                      <input
+                        type="text"
+                        class="bg-gray w-100 py-2 d-block px-3"
+                      />
+                    </div>
+                  </div>
+                  <div class="mx-3">
+                    <div class="my-3">
+                      <div class="uline"></div>
+                    </div>
+                  </div>
+                  <div class="my-2">
+                    <div class="mx-3">
+                      <label class="d-block my-2">Subject</label>
+                      <input
+                        type="text"
+                        class="bg-gray w-100 py-2 d-block px-3"
+                      />
+                    </div>
+                  </div>
+                  <div class="my-2">
+                    <div class="mx-3">
+                      <label class="d-block my-2">Department</label>
+                      <input
+                        type="text"
+                        class="bg-gray w-100 py-2 d-block px-3"
+                      />
+                    </div>
+                  </div>
+                  <div class="my-2">
+                    <div class="mx-3">
+                      <label class="d-block my-2">Room</label>
+                      <input
+                        type="text"
+                        class="bg-gray w-100 py-2 d-block px-3"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="d-flex my-2 mx-3">
+                      <div class="c1e" style="padding: 10px 52px">
+                        Save teacher
+                      </div>
+                    </div>
+                    <div class="d-flex my-2 mx-3">
+                      <div
+                        class="c1e"
+                        type="file"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal1"
+                        style="padding: 10px 18px"
+                      >
+                        Email password reset link
+                      </div>
+                    </div>
+                    <div class="d-flex my-2 mx-3">
+                      <div class="c1e px-5 bg-danger delete">
+                        Delete subject
+                      </div>
+                    </div>
+                    <div class="d-flex my-2 mx-3">
+                      <div class="c1e px-5 bg-danger delete">
+                        Delete teacher
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        Copyright © Netmedia Ltd 2009-2023. All rights reserved. | Terms |
+        Privacy Notice.
+      </p>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Master List of Teachers</title>
+  </head>
+
+  <body>
+    <!-- Submit Pop Up-->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content alert-border">
+          <div class="modal-header" style="border-bottom: 0">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button
+              type="button"
+              class="btn-close cross"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mx-2">
+              <div class="bg-info rounded">
+                <p class="my-2 text-light mx-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-exclamation-diamond"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.48 1.48 0 0 1 0-2.098zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"
+                    />
+                    <path
+                      d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"
+                    />
+                  </svg>
+                  Copy/move class codes
+                </p>
+              </div>
+              <div class="my-2">
+                <div style="background-color: #ededed !important">
+                  <div
+                    class="accordion accordion-flush"
+                    id="accordionPanelsStayOpenExample"
+                  >
+                    <div class="accordion-item">
+                      <h2
+                        class="accordion-header"
+                        id="panelsStayOpen-headingOne"
+                      >
+                        <button
+                          class="accordion-button gray fw-bold collapsed"
+                          style="
+                            border-bottom: 0;
+                            background-color: #ededed !important;
+                          "
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseOne"
+                          aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseOne"
+                        >
+                          1. Select a teacher
+                        </button>
+                      </h2>
+                      <div
+                        id="panelsStayOpen-collapseOne"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingOne"
+                      >
+                        <div class="accordion-body accordion-flush">
+                          <div class="d-flex justify-content-between my-3">
+                            <div class="d-flex">
+                              <div class="my-2 mx-2">
+                                <p>Show</p>
+                              </div>
+                              <div>
+                                <select
+                                  name="format"
+                                  id="format"
+                                  class="w-25 rounded"
+                                  style="min-width: 90px"
+                                >
+                                  <option selected="" disabled="">1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                  <option value="">4</option>
+                                </select>
+                              </div>
+                              <div class="my-2 mx-2">
+                                <p>entries</p>
+                              </div>
+                            </div>
+                            <div class="text-end">
+                              <label>Search</label>
+                              <input type="text" class="bg-light rounded" />
+                            </div>
+                          </div>
+                          <div>
+                            <table class="table table-striped">
+                              <thead>
+                                <tr>
+                                  <th scope="col">ID</th>
+                                  <th scope="col">Teacher Names</th>
+                                  <th scope="col">Subject</th>
+                                  <th scope="col">Department</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">9148</th>
+                                  <td>Venkat</td>
+                                  <td>English</td>
+                                  <td>English</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">13271</th>
+                                  <td>Mr Godkin</td>
+                                  <td>Social Studies</td>
+                                  <td>Social Studies</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td colspan="2">Larry the Bird</td>
+                                  <td>@twitter</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="d-flex justify-content-between">
+                            <div>
+                              <p>Showing 1 to 2 of 2 entries</p>
+                            </div>
+                            <div>
+                              <a>Previous</a>
+                              <a class="pagin">1</a>
+                              <a>Next</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="my-2">
+                <div style="background-color: #ededed !important">
+                  <div
+                    class="accordion accordion-flush"
+                    id="accordionPanelsStayOpenExample"
+                  >
+                    <div class="accordion-item">
+                      <h2
+                        class="accordion-header"
+                        id="panelsStayOpen-headingOne"
+                      >
+                        <button
+                          class="accordion-button gray fw-bold collapsed"
+                          style="
+                            border-bottom: 0;
+                            background-color: #ededed !important;
+                          "
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseTwo"
+                        >
+                          2. Select one or more class codes
+                        </button>
+                      </h2>
+                      <div
+                        id="panelsStayOpen-collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingOne"
+                      >
+                        <div class="accordion-body accordion-flush">
+                          <div class="d-flex justify-content-between my-3">
+                            <div class="d-flex">
+                              <div class="my-2 mx-2">
+                                <p>Show</p>
+                              </div>
+                              <div>
+                                <select
+                                  name="format"
+                                  id="format"
+                                  class="w-25 rounded"
+                                  style="min-width: 90px"
+                                >
+                                  <option selected="" disabled="">1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                  <option value="">4</option>
+                                </select>
+                              </div>
+                              <div class="my-2 mx-2">
+                                <p>entries</p>
+                              </div>
+                            </div>
+                            <div class="text-end">
+                              <label>Search</label>
+                              <input type="text" class="bg-light rounded" />
+                            </div>
+                          </div>
+                          <div>
+                            <table class="table table-striped">
+                              <thead>
+                                <tr>
+                                  <th scope="col">ID</th>
+                                  <th scope="col">Teacher Names</th>
+                                  <th scope="col">Subject</th>
+                                  <th scope="col">Department</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">9148</th>
+                                  <td>Venkat</td>
+                                  <td>English</td>
+                                  <td>English</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">13271</th>
+                                  <td>Mr Godkin</td>
+                                  <td>Social Studies</td>
+                                  <td>Social Studies</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td colspan="2">Larry the Bird</td>
+                                  <td>@twitter</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="d-flex justify-content-between">
+                            <div>
+                              <p>Showing 1 to 2 of 2 entries</p>
+                            </div>
+                            <div>
+                              <a>Previous</a>
+                              <a class="pagin">1</a>
+                              <a>Next</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="my-2">
+                <div style="background-color: #ededed !important">
+                  <div
+                    class="accordion accordion-flush"
+                    id="accordionPanelsStayOpenExample"
+                  >
+                    <div class="accordion-item">
+                      <h2
+                        class="accordion-header"
+                        id="panelsStayOpen-headingOne"
+                      >
+                        <button
+                          class="accordion-button gray fw-bold collapsed"
+                          style="
+                            border-bottom: 0;
+                            background-color: #ededed !important;
+                          "
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseThree"
+                          aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseThree"
+                        >
+                          3. Select one or more target teachers
+                        </button>
+                      </h2>
+                      <div
+                        id="panelsStayOpen-collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingOne"
+                      >
+                        <div class="accordion-body accordion-flush">
+                          <div class="d-flex justify-content-between my-3">
+                            <div class="d-flex">
+                              <div class="my-2 mx-2">
+                                <p>Show</p>
+                              </div>
+                              <div>
+                                <select
+                                  name="format"
+                                  id="format"
+                                  class="w-25 rounded"
+                                  style="min-width: 90px"
+                                >
+                                  <option selected="" disabled="">1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                  <option value="">4</option>
+                                </select>
+                              </div>
+                              <div class="my-2 mx-2">
+                                <p>entries</p>
+                              </div>
+                            </div>
+                            <div class="text-end">
+                              <label>Search</label>
+                              <input type="text" class="bg-light rounded" />
+                            </div>
+                          </div>
+                          <div>
+                            <table class="table table-striped">
+                              <thead>
+                                <tr>
+                                  <th scope="col">ID</th>
+                                  <th scope="col">Teacher Names</th>
+                                  <th scope="col">Subject</th>
+                                  <th scope="col">Department</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">9148</th>
+                                  <td>Venkat</td>
+                                  <td>English</td>
+                                  <td>English</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">13271</th>
+                                  <td>Mr Godkin</td>
+                                  <td>Social Studies</td>
+                                  <td>Social Studies</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td colspan="2">Larry the Bird</td>
+                                  <td>@twitter</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="d-flex justify-content-between">
+                            <div>
+                              <p>Showing 1 to 2 of 2 entries</p>
+                            </div>
+                            <div>
+                              <a>Previous</a>
+                              <a class="pagin">1</a>
+                              <a>Next</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="my-2">
+                <div style="background-color: #ededed !important">
+                  <div
+                    class="accordion accordion-flush"
+                    id="accordionPanelsStayOpenExample"
+                  >
+                    <div class="accordion-item">
+                      <h2
+                        class="accordion-header"
+                        id="panelsStayOpen-headingOne"
+                      >
+                        <button
+                          class="accordion-button gray fw-bold collapsed"
+                          style="
+                            border-bottom: 0;
+                            background-color: #ededed !important;
+                          "
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseFour"
+                          aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseFour"
+                        >
+                          4. Apply changes to existing evening(s)?
+                        </button>
+                      </h2>
+                      <div
+                        id="panelsStayOpen-collapseFour"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingOne"
+                      >
+                        <div class="accordion-body accordion-flush">
+                          <div class="d-flex justify-content-between my-3">
+                            <div class="d-flex">
+                              <div class="my-2 mx-2">
+                                <p>Show</p>
+                              </div>
+                              <div>
+                                <select
+                                  name="format"
+                                  id="format"
+                                  class="w-25 rounded"
+                                  style="min-width: 90px"
+                                >
+                                  <option selected="" disabled="">1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                  <option value="">4</option>
+                                </select>
+                              </div>
+                              <div class="my-2 mx-2">
+                                <p>entries</p>
+                              </div>
+                            </div>
+                            <div class="text-end">
+                              <label>Search</label>
+                              <input type="text" class="bg-light rounded" />
+                            </div>
+                          </div>
+                          <div>
+                            <table class="table table-striped">
+                              <thead>
+                                <tr>
+                                  <th scope="col">ID</th>
+                                  <th scope="col">Teacher Names</th>
+                                  <th scope="col">Subject</th>
+                                  <th scope="col">Department</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">9148</th>
+                                  <td>Venkat</td>
+                                  <td>English</td>
+                                  <td>English</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">13271</th>
+                                  <td>Mr Godkin</td>
+                                  <td>Social Studies</td>
+                                  <td>Social Studies</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td colspan="2">Larry the Bird</td>
+                                  <td>@twitter</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="d-flex justify-content-between">
+                            <div>
+                              <p>Showing 1 to 2 of 2 entries</p>
+                            </div>
+                            <div>
+                              <a>Previous</a>
+                              <a class="pagin">1</a>
+                              <a>Next</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="px-2 py-2 rounded">
+              <div class="d-flex">
+                <div class="c1e px-3 rounded-pill" data-bs-dismiss="modal">
+                  Copy Class Codes
+                </div>
+                <div
+                  class="c1e px-3 py rounded-pill text-right"
+                  data-bs-dismiss="modal"
+                >
+                  Move Class Codes
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="" id="header">
+      <div class="a">
+        <div class="d">
+          <div class="d2">
+            <img src="images/Asset 1@33.33x.png" class="ico" />Parents Booking
+          </div>
+        </div>
+        <div class="list-h">
+          <ul>
+            <li class="nav-menu">
+              <a href="index.html" class="text-light text-decoration-none"
+                >Dashboard</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="set-up-school.html"
+                class="text-light text-decoration-none"
+                >Set-up school</a
+              >
+            </li>
+
+            <li class="nav-menu">
+              <a
+                href="Upload-Data-4.html"
+                class="text-light text-decoration-none"
+                >Upload data</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="Parent-Page-5.html"
+                class="text-light text-decoration-none"
+                >Parents</a
+              >
+            </li>
+            <li class="nav-menu active">
+              <a
+                href="Teacher-Page-6.html"
+                class="text-light text-decoration-none"
+                >Teachers</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a href="Evenings-7c.html" class="text-light text-decoration-none"
+                >Evenings</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a href="Events-8c.html" class="text-light text-decoration-none"
+                >Events and Clubs</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="Dashboard-12d.html"
+                class="text-light text-decoration-none"
+                >Manage bookings</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a href="Reports-10a.html" class="text-light text-decoration-none"
+                >Reports</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a href="#" class="text-light text-decoration-none"
+                >View contact</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a href="#" class="text-light text-decoration-none">Support</a>
+            </li>
+            <li class="nav-menu">
+              <a href="#" class="text-light text-decoration-none">Training</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="atx">
+        <div class="exp">
+          <div class="btn-a" onclick="toggle()">
+            <div class="mob-btn">
+              <div class="dashdiv"></div>
+              <div class="dashdiv"></div>
+              <div class="dashdiv"></div>
+            </div>
+          </div>
+        </div>
+        <div class="b-c-hdiv">
+          <div id="hedr" class="d-flex justify-content-between">
+            <div class="sn">
+              <div class="snimg">
+                <img src="images/Asset 2mdpi.png" class="schoolicon" />
+              </div>
+              <div class="sntxt">
+                <div class="scnholder">School Name</div>
+                <div class="admnnameholder">Admin name</div>
+              </div>
+            </div>
+
+            <div class="ln-lt">
+              <img src="images/Asset 6mdpi.png" class="lanicon" />
+              <div class="lan">Language</div>
+              <div class="sep"></div>
+              <div class="lout">Logout</div>
+              <img src="images/Asset 7mdpi.png" class="louticon" />
+            </div>
+          </div>
+
+          <div class="divline"></div>
+        </div>
+
+        <div class="b1 mx-3 my-3">
+          <div id="bch" class="row">
+            <div class="d-flex justify-content-between">
+              <div>
+                <div class="iconntitle">
+                  <div class="icf">
+                    <div class="ic1">
+                      <img src="images/UploadDate-list.svg" class="nicon" />
+                    </div>
+                    <div class="ic2">
+                      <div class="ic2f1">Master List of Departments</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="my-2">
+                <p class="c1e px-5">Save</p>
+              </div>
+            </div>
+            <div class="ic2f2"></div>
+            <div>
+              <div>
+                <p class="text-center">Total number of Subjects : 14</p>
+              </div>
+
+              <div>
+                <div class="">
+                  <p class="fw-bold fs-5 mar-0">
+                    Geography - Department: Geography
+                  </p>
+                </div>
+                <div class="col-md-8">
+                  <div class="">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col-md">
+                            <div class="my-2">
+                              <input type="text" class="w-100 py-2 mb-1" />
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input mx-1"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexCheckDefault"
+                                >
+                                  Tutor Subject
+                                </label>
+                              </div>
+                            </div>
+                          </th>
+                          <th scope="col-md">
+                            <p class="c1e my-5">Save</p>
+                          </th>
+                          <th scope="col-md">
+                            <p class="c1e my-5">Delete</p>
+                          </th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="my-2">
+                <div class="">
+                  <p class="fw-bold fs-5 mar-0">
+                    Art and Design - Department: Art and Design
+                  </p>
+                </div>
+                <div class="col-md-8">
+                  <div class="">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col-md">
+                            <div class="my-2">
+                              <input type="text" class="w-100 py-2 mb-1" />
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input mx-1"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexCheckDefault"
+                                >
+                                  Tutor Subject
+                                </label>
+                              </div>
+                            </div>
+                          </th>
+                          <th scope="col-md">
+                            <p class="c1e my-5">Save</p>
+                          </th>
+                          <th scope="col-md">
+                            <p class="c1e my-5">Delete</p>
+                          </th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="my-2">
+                <div class="">
+                  <p class="fw-bold fs-5 mar-0">
+                    Citizenship - Department: Citizenship
+                  </p>
+                </div>
+                <div class="col-md-8">
+                  <div class="">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col-md">
+                            <div class="my-2">
+                              <input type="text" class="w-100 py-2 mb-1" />
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input mx-1"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexCheckDefault"
+                                >
+                                  Tutor Subject
+                                </label>
+                              </div>
+                            </div>
+                          </th>
+                          <th scope="col-md">
+                            <p class="c1e my-5">Save</p>
+                          </th>
+                          <th scope="col-md">
+                            <p class="c1e my-5">Delete</p>
+                          </th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="my-2">
+                <div class="">
+                  <p class="fw-bold fs-5 mar-0">
+                    Mathematics - Department: Mathematics
+                  </p>
+                </div>
+                <div class="col-md-8">
+                  <div class="">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col-md">
+                            <div class="my-2">
+                              <input type="text" class="w-100 py-2 mb-1" />
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input mx-1"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="flexCheckDefault"
+                                >
+                                  Tutor Subject
+                                </label>
+                              </div>
+                            </div>
+                          </th>
+                          <th scope="col-md">
+                            <p class="c1e my-5">Save</p>
+                          </th>
+                          <th scope="col-md">
+                            <p class="c1e my-5">Delete</p>
+                          </th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        Copyright © Netmedia Ltd 2009-2023. All rights reserved. | Terms |
+        Privacy Notice.
+      </p>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/checkbox.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

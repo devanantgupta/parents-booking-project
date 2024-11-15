@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Manage Bolt-Ons</title>
+  </head>
+
+  <body>
+    <!-- Submit Pop Up-->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" style="border-bottom: 0">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button
+              type="button"
+              class="btn-close cross"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <div class="iconntitle">
+                <div class="icf">
+                  <div class="ic1">
+                    <img src="images/Asset 14mdpi.png" class="nicon" />
+                  </div>
+                  <div class="ic2">
+                    <div class="ic2f1">
+                      Review / Confirm Teacher Assignments
+                    </div>
+                    <div class="ic2f2"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="my-3">
+                <span class="small-font margin-lr fs-16 my-3"
+                  >Select Applicable Evenings</span
+                >
+              </div>
+
+              <br />
+
+              <div class="margin-lr">
+                <table class="table">
+                  <thead class="table-secondary">
+                    <tr>
+                      <th></th>
+                      <th>Name of Group</th>
+                      <th>Parents’ Evening</th>
+                      <th>Date</th>
+                      <th>Start</th>
+                      <th>End</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <input
+                          type="radio"
+                          class="table-secondary input-radio"
+                          name="subject"
+                        />
+                      </td>
+                      <td>Autumn Term</td>
+                      <td>S5 / 6 Evening</td>
+                      <td>5th Nov 2021</td>
+                      <td>16:00</td>
+                      <td>19:00</td>
+                    </tr>
+                    <tr class="table-secondary">
+                      <td>
+                        <input
+                          type="radio"
+                          class="table-secondary input-radio"
+                          name="subject"
+                        />
+                      </td>
+                      <td>Autumn Term</td>
+                      <td>Example Parents’ Evening</td>
+                      <td>5th Nov 2021</td>
+                      <td>16:00</td>
+                      <td>19:00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="my-3">
+                <div class="margin-lr">
+                  <div class="uline"></div>
+                </div>
+              </div>
+
+              <div class="margin-lr">
+                <table class="table my-3">
+                  <thead class="table-secondary">
+                    <tr>
+                      <th></th>
+                      <th>Name of Group</th>
+                      <th>Parents’ Evening</th>
+                      <th>Date</th>
+                      <th>Start</th>
+                      <th>End</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="remove-border">
+                      <td>
+                        <input
+                          type="radio"
+                          class="table-secondary input-radio"
+                          name="subject"
+                        />
+                      </td>
+                      <td>Miss Care</td>
+                      <td>Business Management</td>
+                      <td>Business Subjects</td>
+                      <td>Update Children</td>
+                      <td>5th Nov 2021 17:32</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="my-3">
+                <div class="margin-lr">
+                  <div class="uline"></div>
+                </div>
+              </div>
+
+              <div class="margin-lr">
+                <div class="d-flex">
+                  <div class="c1e px-5" data-bs-dismiss="modal">
+                    Apply Changes
+                  </div>
+                  <div class="c1e px-5 mx-3" data-bs-dismiss="modal">
+                    Ignore Changes
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="" id="header">
+      <div class="a">
+        <div class="d">
+          <div class="d2">
+            <img src="images/Asset 1@33.33x.png" class="ico" />Parents Booking
+          </div>
+        </div>
+        <div class="list-h">
+          <ul>
+            <li class="nav-menu">
+              <a href="index.html" class="text-light text-decoration-none"
+                >Dashboard</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="set-up-school.html"
+                class="text-light text-decoration-none"
+                >Set-up school</a
+              >
+            </li>
+
+            <li class="nav-menu">
+              <a
+                href="Upload-Data-4.html"
+                class="text-light text-decoration-none"
+                >Upload data</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="Parent-Page-5.html"
+                class="text-light text-decoration-none"
+                >Parents</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="Teacher-Page-6.html"
+                class="text-light text-decoration-none"
+                >Teachers</a
+              >
+            </li>
+            <li class="nav-menu active">
+              <a href="Evenings-7c.html" class="text-light text-decoration-none"
+                >Evenings</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a href="Events-8c.html" class="text-light text-decoration-none"
+                >Events and Clubs</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="Dashboard-12d.html"
+                class="text-light text-decoration-none"
+                >Manage bookings</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a href="#" class="text-light text-decoration-none">Reports</a>
+            </li>
+            <li class="nav-menu">
+              <a href="#" class="text-light text-decoration-none"
+                >View contact</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a href="#" class="text-light text-decoration-none">Support</a>
+            </li>
+            <li class="nav-menu">
+              <a href="#" class="text-light text-decoration-none">Training</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="atx">
+        <div class="exp">
+          <div class="btn-a" onclick="toggle()">
+            <div class="mob-btn">
+              <div class="dashdiv"></div>
+              <div class="dashdiv"></div>
+              <div class="dashdiv"></div>
+            </div>
+          </div>
+        </div>
+        <div class="b-c-hdiv">
+          <div id="hedr" class="d-flex justify-content-between">
+            <div class="sn">
+              <div class="snimg">
+                <img src="images/Asset 2mdpi.png" class="schoolicon" />
+              </div>
+              <div class="sntxt">
+                <div class="scnholder">School Name</div>
+                <div class="admnnameholder">Admin name</div>
+              </div>
+            </div>
+
+            <div class="ln-lt">
+              <div class="d-flex my-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  class="bi bi-power"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M7.5 1v7h1V1z" />
+                  <path
+                    d="M3 8.812a5 5 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812"
+                  />
+                </svg>
+                &nbsp;
+
+                <div>Back to Superadmin</div>
+                &nbsp;&nbsp;&nbsp;
+              </div>
+              <img src="images/Asset 6mdpi.png" class="lanicon" />
+              <div class="lan">Language</div>
+              <div class="sep"></div>
+              <div class="lout">Logout</div>
+              <img src="images/Asset 7mdpi.png" class="louticon" />
+            </div>
+          </div>
+
+          <div class="divline"></div>
+        </div>
+
+        <div id="bch" class="row">
+          <div class="" id="b">
+            <div class="sdiv d-inline-block">
+              <a href="index.html">School Name</a> / Teachers
+            </div>
+
+            <div class="b1" style="height: 600px;">
+              <div class="iconntitle">
+                <div class="icf">
+                  <div class="ic1">
+                    <img src="images/Student-Selection.svg" class="nicon" />
+                  </div>
+                  <div class="ic2">
+                    <div class="ic2f1 fw-bold my-2">Manage Bolt-Ons</div>
+                    <div
+                      class="ic2f2 title-line"
+                      style="min-width: 69vw !important"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="margin-lr">
+                <div class="my-2 d-flex">
+                  <div>
+                    <p>
+                      You can add the following bolt-ons to your subscription.
+                      The costs shown are annual costs.
+                    </p>
+                  </div>
+                </div>
+
+                </div>
+
+
+                <div class="ms-5">
+                  <div>
+                    <ul class="pad-0">
+                      <li class="ms-5">
+                        <a
+                          >• if you add a bolt-on to your subscription you will
+                          be billed a pro-rata of the annual cost initially, and
+                          this cost is shown once you select the bolt-ons you
+                          want to add.</a
+                        >
+                      </li>
+                      <li class="my-3 ms-5">
+                        <a>
+                          • The full cost of the bolt-ons you add will be added
+                          to your next annual renewal invoice.</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                
+                <div class="ms-5">
+                    <div class="row ms-3">
+                      <div class="col-md-6">
+                        <div class="px-3 py-3" style="background-color: #008000a8;">
+                          <div class="d-flex justify-content-between">
+                            <div>
+                              <div>
+                                <p class="fw-bold">Video Calls bolt-on</p>
+                              </div>
+                              <div>
+                                <p class="fs-16">
+                                  Learn more about this module here <br />
+                                  Annual Cost. $100.00 <br />
+                                  Pro-rata cost until 13/12/2027-$75.00
+                                </p>
+                              </div>
+                            </div>
+                            <div>
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                                style="border-radius: 0; border: 1px solid"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="bg-white px-3 py-3">
+                          <div class="d-flex justify-content-between">
+                            <div>
+                              <div>
+                                <p class="fw-bold">Event Booking and School Club bolt-on</p>
+                              </div>
+                              <div>
+                                <p class="fs-16">
+                                  Learn more about this module here <br />
+                                  Annual Cost. $100.00 <br />
+                                  Pro-rata cost until 13/12/2027:$112.50
+                                </p>
+                              </div>
+                            </div>
+                            <div>
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                                style="border-radius: 0; border: 1px solid"
+                              />
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        Copyright © Netmedia Ltd 2009-2023. All rights reserved. | Terms |
+        Privacy Notice.
+      </p>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

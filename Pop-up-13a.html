@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+   <title>Pop Up 13a</title>
+</head>
+
+
+<body>
+  
+
+  <!-- Submit Pop Up-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="text-end" style="border-bottom: 0">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="btn-close cross" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body mb-5">
+            <div >
+
+                <div class="iconntitle">
+                  <div class="icf">
+                    <div class="ic1"><img src="images/Student-Selection.svg" class="nicon"></div>
+                    <div class="ic2">
+                      <div class="ic2f1 ">
+                        Student Selection </div>
+                      <div class="ic2f2" style="    min-width: 53vw;"></div>
+                    </div>
+                  </div>
+                </div>
+                 
+                 
+                <br>
+               
+              
+                 
+                  <div class="margin-lr pops">
+                    <div>
+                        <div class="my-3">
+                            <div class=" w-100">
+                                <select name="format" id="format" class="bg-gray w-100 fw-bold" style="">
+                                  <option selected="" disabled="" >
+                                    <p class="fw-bold">Select a Class</p>
+                                  </option>
+                                  <option value="">1 Contacts</option>
+                                  <option value="">2 Contacts</option>
+                                  <option value="">3 Contacts</option>
+                                </select>
+                              </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="my-3">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div>
+                                                <div class="border border-dark py-2 px-3 bg-gray">
+                                                  <input class="form-check-input rounded-circle " type="checkbox" value="" id="flexCheckDefault">
+                                                    &nbsp; Register Classes
+                                                  </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>
+                                                <div class="border border-dark py-2 px-3 bg-gray">
+                                                  <input class="form-check-input rounded-circle " type="checkbox" value="" id="flexCheckDefault">
+                                                    &nbsp; Class Codes
+                                                  </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>
+                                                <div class="border border-dark py-2 px-3 bg-gray">
+                                                  <input class="form-check-input rounded-circle " type="checkbox" value="" id="flexCheckDefault">
+                                                    &nbsp; Year Groups
+                                                  </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="">
+                                <div class="my-3 d-flex justify-content-between">
+                                      <div class="d-flex">
+                                        <div class=" my-4">Show</div>
+                                      <div class="">
+                                        <div class=" my-4 mx-2">
+                                            <!-- <select name="format" id="format" class="bg-gray w-75" style="">
+                                              <option selected="" disabled="">10</option>
+                                              <option value="">1 Contacts</option>
+                                              <option value="">2 Contacts</option>
+                                              <option value="">3 Contacts</option>
+                                            </select> -->
+                                            <select class="px-2 py-1 bg-gray fw-bold">
+                                              <option class="fw-bold">
+                                                10
+                                              </option>
+                                              <option>
+                                                20
+                                              </option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                      <div id="deselectAll " class=" my-4">entries</div>
+                                      </div>
+                                      <div>
+                                        <div class="form d-inline-block float-end position-relative my-3 text-end">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search position-absolute my-1 mx-2 my-2" viewBox="0 0 16 16">
+                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                                          </svg>
+                                          <input type="text" class="form-input px-5 rounded-pill fs-16 border border-dark" placeholder="Search ">
+                                          <span class="left-pan"><i class="fa fa-microphone"></i></span>
+                                        </div>
+                                      </div>
+                                    
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div>
+                                        <table class="table table-striped">
+                                            <thead class="table-secondary">
+                                              <tr>
+                                                <!-- <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th> </th>
+                                                <th></th> -->
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td>12/ENG/1</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>12/ENG/1</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>12/ENG/1</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>12/ENG/1</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>12/ENG/1</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>12/ENG/1</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                             
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div>
+                                        <table class="table table-striped">
+                                            <thead class="table-secondary">
+                                              <tr>
+                                                <!-- <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th> </th>
+                                                <th></th> -->
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td>12/ENG/1</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>12/ENG/1</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>12/ENG/1</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>12/ENG/1</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>12/ENG/1</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>12/ENG/1</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                             
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     
+                  </div>
+
+				  <div class="my-3">
+					<div class="margin-lr">
+						<div class="uline"></div>
+					</div>
+
+
+                    <div class="margin-lr">
+                        <div>
+                            <div class="">
+                                <div class="my-3">
+                                    
+                                      <!-- <strong id="selectAll">Select All | </strong> -->
+                                      <div class="d-inline-block my-4">Showing 1 to 10 of 18 entries</div>
+                                      <div class="form d-inline-block float-end position-relative my-4">
+                                        <div class="d-flex">
+                                            <div class="mx-2">
+                                                <p>Previous</p>
+                                            </div>
+                                            <div class="mx-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                                  </svg>
+                                            </div>
+                                            <div class="mx-2">
+                                                <p class="fw-bold">1</p>
+                                            </div>
+                                            <div class="mx-2">
+                                                <p >2</p>
+                                            </div>
+                                            <div class="mx-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                                  </svg>
+                                            </div>
+                                            <div class="mx-2">
+                                                <p>Next</p>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    
+                                  </div>
+                            </div>
+                        </div>
+
+                        <div class="my-3 pops">
+                            <div class=" w-100">
+                                <select name="format" id="format" class="bg-gray w-100 fw-bold" style="">
+                                  <option selected="" disabled="">Select a student</option>
+                                  <option value="">1 Contacts</option>
+                                  <option value="">2 Contacts</option>
+                                  <option value="">3 Contacts</option>
+                                </select>
+                              </div>
+                        </div>
+                    </div>
+					
+				 </div>
+
+                 
+				 
+                 <div class="margin-lr">
+                    <div class="row">
+                        <!-- <div class="c1e px-5 col-md-4" data-bs-dismiss="modal">
+                            
+                            Add Class
+                        
+                        </div>
+                        <div class="c1e px-5  col-md-4" data-bs-dismiss="modal">Add Student</div>
+                        <div class="c1e px-5  col-md-4" data-bs-dismiss="modal">Cancel</div> -->
+
+                        <div class="col-md-4">
+                            <div class="c1e">Add Class</div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="c1e">Add Student</div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="c1e">Cancel</div>
+                        </div>
+                    </div>
+                 </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<button class="a-btn2" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+</div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+  <script src="js/checkbox.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+</body>
+
+
+</html>
